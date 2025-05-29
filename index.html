@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InPanels Development</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="shortcut icon" href="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8114226943532527"
+     crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <header class="sticky top-0 z-50 bg-gray-900 flex items-center justify-between p-3 max-w-7xl mx-auto">
+      <div class="text-xl font-bold">InPanels.Dev</div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#home" class="hover:text-blue-400">Home</a>
+        <a onclick="comingSoon()" class="cursor-pointer hover:text-blue-400">Services</a>
+        <a href="halaman-article.html" class="cursor-pointer hover:text-blue-400">Baca Artikel <i class="ri-fire-fill text-yellow-600"></i></a>
+        <a href="#summerinfo" class="hover:text-blue-400">Summer Info</a>
+      </nav>
+    
+      <div class="flex gap-4 items-center relative">
+
+        <button id="demoToggle" class="text-sm px-3 py-[6px] border rounded-md hover:bg-gray-800 focus:outline-none">
+          <i class="ri-layout-2-fill"></i>
+        </button>
+
+        <div id="demoMenu" class="absolute right-0 top-14 text-gray-300 bg-gray-900 border rounded-md shadow-md w-48 hidden z-50">
+          <a href="#home" class="block px-4 py-3 hover:bg-gray-800 text-sm">Home</a>
+          <a href="#about" class="block px-4 py-3 hover:bg-gray-800 text-sm">About Us</a>
+          <a onclick="comingSoon()" class="cursor-pointer block px-4 py-3 hover:bg-gray-800 text-sm">ATHENA FAMILY</a>
+          <a onclick="comingSoon()" class="cursor-pointer block px-4 py-3 hover:bg-gray-800 text-sm">Services</a>
+          <a href="#summerinfo" class="block px-4 py-3 hover:bg-gray-800 text-sm">Summer Info</a>
+          <a href="halaman-article.html" class="cursor-pointer block px-4 py-3 hover:bg-gray-800 text-sm">Baca Artikel <i class="ri-fire-fill text-yellow-600"></i></a>
+          <a href="privacy-and-policy.html" class="block px-4 py-3 hover:bg-gray-800 text-sm">Privacy & Policy</a>
+          <a href="disclaimer-page.html" class="block px-4 py-3 hover:bg-gray-800 text-sm">Disclaimer</a>
+          <a href="#contact" class="block px-4 py-3 hover:bg-gray-800 text-sm">Contact Us</a>
+        </div>
+
+        <select class="text-sm bg-gray-900 border rounded-md px-2 py-1">
+          <option>English</option>
+        </select>
+      </div>
+    </header>
+
+    <section id="home" class="scroll-mt-20 max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-12 items-center">
+      <div class="animate__animated animate__fadeInLeft">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">In<span class="underline decoration-gray-600">Panels</span>.Dev</h1>
+        <p class="text-lg text-gray-200 mb-6">Welcome to Department InPanels Development, In here you will see our InPanels Team working for a collaboration with influencer and tiktok content creator, we are work together to have a good friendship between our company.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <button onclick="document.getElementById('demoModal').classList.remove('hidden')" 
+            class="px-6 py-3 bg-gray-700 text-white text-sm font-semibold rounded-lg shadow-md hover:bg-gray-800 transition duration-300">
+            Support Us
+            </button>
+            <a href="halaman-article.html" class="px-6 py-3 bg-gray-200 text-center text-gray-800 text-sm font-semibold rounded-lg shadow-md hover:bg-gray-300 transition duration-300">
+            Baca Artikel <i class="ri-fire-fill text-yellow-600"></i>
+            </a>
+        </div>
+
+    <div id="demoModal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+        <div class="bg-gray-900 w-full max-w-md mx-4 rounded-xl shadow-xl p-6 relative animate-fade-in border border-red-800">
+
+        <button onclick="document.getElementById('demoModal').classList.add('hidden')" 
+                class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-lg">
+            ✕
+        </button>
+    
+        <h2 class="text-xl font-semibold text-gray-300 mb-4">Support Us</h2>
+    
+        <div class="flex flex-col gap-3">
+            <a href="https://saweria.co/drevviann">
+              <button class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg font-medium hover:bg-gray-800 transition duration-1000">
+                <i class="ri-hand-coin-fill"></i> Via Saweria
+              </button>
+            </a>
+        </div>
+    
+        </div>
+    </div>
+  
+        <div class="grid grid-cols-2 gap-6 mt-10">
+          <div>
+            <h3 class="text-2xl font-bold">6/2025</h3>
+            <p class="text-sm text-gray-300">Countdown Summerfest</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold">~10K/175K</h3>
+            <p class="text-sm text-gray-300">Accumulated Funds</p>
+          </div>
+          <div class="col-span-2 flex items-center mt-4">
+            <div class="text-yellow-500 text-lg">★★★★★</div>
+            <span class="text-sm ml-2 text-gray-300">5 Average user rating</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="animate-fade-in">
+        <img src="assets/img/Proyek Baru 82 [C39BEED].png" alt="InPanels Home Image" class="bg-hero w-full max-w-md mx-auto">
+      </div>
+    </section>  
+    
+    <section class="py-16 px-4 sm:px-6 lg:px-8 animate-fade-in">
+        <div class="max-w-7xl mx-auto text-center">
+    
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            
+            <div class="p-6 bg-gray-700 rounded-xl shadow-md">
+            <p class="text-4xl font-bold text-gray-300 counter" data-target="6">0</p>
+            <p class="text-gray-300 mt-2">Video Uploaded</p>
+            </div>
+    
+            <div class="p-6 bg-gray-700 rounded-xl shadow-md">
+            <p class="text-4xl font-bold text-gray-300 counter" data-target="10">0</p>
+            <p class="text-gray-300 mt-2">Articles Available</p>
+            </div>
+    
+            <div class="p-6 bg-gray-700 rounded-xl shadow-md">
+            <p class="text-4xl font-bold text-gray-300 counter" data-target="10000">0</p>
+            <p class="text-gray-300 mt-2">Accumulated Funds</p>
+            </div>
+    
+        </div>
+        </div>
+    </section>
+    
+    <section class="mb-20 px-6 md:px-12 scroll-mt-20" id="about">
+        <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-400 opacity-0 translate-y-6 transition-all duration-1000 ease-out" id="aboutHeading">
+            About Us
+        </h2>
+        <p class="mt-4 text-gray-200 text-base md:text-lg leading-relaxed opacity-0 translate-y-6 transition-all duration-1000 ease-out delay-100" id="aboutText">
+            At InPanels Development, we help companies build better workplaces by combining smart design and people-focused technology. Our mission is to make HR not just efficient, but meaningful — creating tools that support culture, collaboration, and growth.
+        </p>
+    
+        <div class="mt-10 grid md:grid-cols-2 gap-12">
+            <div class="opacity-0 translate-y-6 transition-all duration-1000 ease-out delay-200" id="aboutLeft">
+            <h3 class="text-xl font-semibold text-gray-400 mb-3">Our Focus</h3>
+            <ul class="space-y-2 text-gray-200 list-disc list-inside">
+                <li>Be success at job</li>
+                <li>Being good person.</li>
+                <li>Always smile.</li>
+                <li>Make customer always happy.</li>
+            </ul>
+            </div>
+            <div class="opacity-0 translate-y-6 transition-all duration-1000 ease-out delay-300" id="aboutRight">
+            <h3 class="text-xl font-semibold text-gray-400 mb-3">Why It Matters</h3>
+            <p class="text-gray-200 leading-relaxed">
+                Happy teams build great companies. We believe HR tools should enable meaningful work, not just manage people. That’s why we build tech that’s fast, flexible, and easy to use — so your people can focus on what matters most.
+            </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 md:px-8 animate-fade-in">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+        
+          
+          <div>
+            <div class="overflow-x-auto rounded-lg shadow-lg">
+              <table class="min-w-full text-sm text-left">
+                <thead class="bg-gray-800 text-white">
+                  <tr>
+                    <th class="px-6 py-3 font-semibold">Name</th>
+                    <th class="px-6 py-3 font-semibold">Score</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 bg-gray-700">
+                  <tr class="hover:bg-gray-600 transition-all duration-200">
+                    <td class="px-6 py-4 font-medium text-gray-200 animate-fade-in-left">NaN</td>
+                    <td class="px-6 py-4 text-gray-400 font-bold animate-fade-in-right">99/10</td>
+                  </tr>
+                  <tr class="hover:bg-gray-600 transition-all duration-200">
+                    <td class="px-6 py-4 font-medium text-gray-200 animate-fade-in-left">NaN</td>
+                    <td class="px-6 py-4 text-gray-400 font-bold animate-fade-in-right">99/10</td>
+                  </tr>
+                  <tr class="hover:bg-gray-600 transition-all duration-200">
+                    <td class="px-6 py-4 font-medium text-gray-200 animate-fade-in-left">NaN</td>
+                    <td class="px-6 py-4 text-gray-400 font-bold animate-fade-in-right">99/10</td>
+                  </tr>
+                  <tr class="hover:bg-gray-600 transition-all duration-200">
+                    <td class="px-6 py-4 font-medium text-gray-200 animate-fade-in-left">NaN</td>
+                    <td class="px-6 py-4 text-gray-400 font-bold animate-fade-in-right">99/10</td>
+                  </tr>
+                  <tr class="hover:bg-gray-600 transition-all duration-200">
+                    <td class="px-6 py-4 font-medium text-gray-200 animate-fade-in-left">NaN</td>
+                    <td class="px-6 py-4 text-gray-400 font-bold animate-fade-in-right">99/10</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      
+          <div>
+            <div class="bg-gray-700 py-8 px-4 md:px-8 rounded-lg shadow-lg space-y-4 animate-fade-in">
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span>NaN</span><span>99</span>
+                </div>
+                <div class="h-3 bg-blue-100 rounded-full">
+                  <div class="h-3 bg-gray-800 rounded-full w-[60%] animate-grow-bar"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span>NaN</span><span>99</span>
+                </div>
+                <div class="h-3 bg-blue-100 rounded-full">
+                  <div class="h-3 bg-gray-800 rounded-full w-[75%] animate-grow-bar"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span>NaN</span><span>99</span>
+                </div>
+                <div class="h-3 bg-blue-100 rounded-full">
+                  <div class="h-3 bg-gray-800 rounded-full w-[90%] animate-grow-bar"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span>NaN</span><span>99</span>
+                </div>
+                <div class="h-3 bg-gray-100 rounded-full">
+                  <div class="h-3 bg-gray-800 rounded-full w-[90%] animate-grow-bar"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span>NaN</span><span>99</span>
+                </div>
+                <div class="h-3 bg-gray-100 rounded-full">
+                  <div class="h-3 bg-gray-800 rounded-full w-[70%] animate-grow-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+      <section class="py-12 px-4 md:px-8 animate-fade-in">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-400">Summer Event Winner</h2>
+            <p class="text-sm text-gray-200 mb-10">Train your editing skills until your name has been here.</p>
+        
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-items-center">
+
+              <div class="flex flex-col items-center animate-fade-in-up hover:scale-105 transition-transform">
+                <img src="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn-removebg-preview (1).png" alt="Winner 1" class="w-24 h-24 rounded-full shadow-lg border-4 border-blue-500 mb-2">
+                <span class="font-medium text-gray-200">NaN</span>
+              </div>
+ 
+              <div class="flex flex-col items-center animate-fade-in-up hover:scale-105 transition-transform">
+                <img src="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn-removebg-preview (1).png" alt="Winner 2" class="w-24 h-24 rounded-full shadow-lg border-4 border-blue-500 mb-2">
+                <span class="font-medium text-gray-200">NaN</span>
+              </div>
+
+              <div class="flex flex-col items-center animate-fade-in-up hover:scale-105 transition-transform">
+                <img src="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn-removebg-preview (1).png" alt="Winner 3" class="w-24 h-24 rounded-full shadow-lg border-4 border-blue-500 mb-2">
+                <span class="font-medium text-gray-200">NaN</span>
+              </div>
+
+              <div class="flex flex-col items-center animate-fade-in-up hover:scale-105 transition-transform">
+                <img src="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn-removebg-preview (1).png" alt="Winner 4" class="w-24 h-24 rounded-full shadow-lg border-4 border-blue-500 mb-2">
+                <span class="font-medium text-gray-200">NaN</span>
+              </div>
+
+              <div class="flex flex-col items-center animate-fade-in-up hover:scale-105 transition-transform">
+                <img src="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn-removebg-preview (1).png" alt="Winner 5" class="w-24 h-24 rounded-full shadow-lg border-4 border-blue-500 mb-2">
+                <span class="font-medium text-gray-200">NaN</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="summerinfo" class="scroll-mt-20 py-10 px-4 sm:px-6 lg:px-8">
+          <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
+            
+            <div class="md:text-left flex-1">
+              <h2 class="text-2xl font-bold text-gray-400 mb-2"><i style="color: rgb(255, 208, 0);" class="ri-sun-fill"></i> Summer Info</h2>
+              <p class="text-gray-200 text-base mb-4">
+                InPanels Development will be hosting a summer event in June 2025. This will be the very first event organized by the InPanels Development team. Through this event, they aim to find individuals with exceptional skills in anime GFX manipulation and editing, with a strong attention to detail. They will also be providing certificates and real cash prizes. So what are you waiting for? Join the event and help make it a success to support the growth of this community!
+              </p>
+            </div>
+
+            <div class="flex-shrink-0">
+              <img src="assets/img/quality_restoration_20250521172234230.png" alt="Summer Logo" class="w-[350px] rounded-xl h-auto">
+            </div>
+
+          </div>
+        </section>
+
+
+
+
+  <section id="contact" class="py-20 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      
+
+      <div class="space-y-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-400 animate-fade-in">Contact Us</h2>
+        <p class="text-gray-200 text-md animate-fade-in">We're here to answer your questions and help you. Drop us a message and we'll get back to you as soon as we can!</p>
+        <img src="assets/img/Proyek Baru 82 [C39BEED].png" alt="Contact" class="rounded-xl bg-hero w-full max-w-sm animate-fade-in-up">
+      </div>
+  
+      <form action="https://api.web3forms.com/submit" method="POST" class="bg-gray-800 shadow-xl rounded-2xl p-8 space-y-6 animate-fade-in-up">
+        <input type="hidden" name="access_key" value="e722d3ae-0c77-4eae-aa19-3618e9f38bc5" />
+
+        <input type="hidden" name="redirect" value="https://inpanels.site/thank-you.html">
+
+        <div>
+            <label for="name" class="text-sm font-semibold text-gray-50 block mb-1">Your Name</label>
+            <input id="name" name="name" type="text" class="w-full px-4 py-2 bg-gray-700 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+          <div>
+            <label for="email" class="text-sm font-semibold text-gray-50 block mb-1">Your Email</label>
+            <input id="email" name="email" type="email" class="w-full px-4 py-2 bg-gray-700 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+          <div>
+            <label for="message" class="text-sm font-semibold text-gray-50 block mb-1">Your Message</label>
+            <textarea id="message" name="message" rows="4" class="resize-none bg-gray-700 w-full px-4 py-2 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+          </div>
+        <button type="submit" class="w-full bg-gray-600 text-white py-2 px-6 rounded-lg hover:bg-gray-700 transition duration-300 shadow-md">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+    <a id="scrollTopBtn" class="fixed w-[50px] bottom-20 right-6 bg-gray-700 hover:bg-gray-800 text-white px-4 py-3 rounded-xl shadow-lg opacity-0 invisible transform translate-y-4 transition-all duration-500 ease-in-out z-50">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+    
+  
+    <div id="eventBanner" class="fixed bottom-0 w-full bg-gray-800 shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 relative text-xs text-gray-50 sm:flex sm:items-center sm:justify-between">
+    
+        <button onclick="document.getElementById('eventBanner').remove()" 
+                class="absolute top-2 right-3 sm:static sm:order-2 sm:ml-4 text-gray-50 hover:text-gray-70 text-base sm:text-sm">
+            ✕
+        </button>
+    
+        <span class="block pr-8 sm:pr-0 sm:order-1 text-center sm:text-left leading-snug">
+            <i style="color: rgb(255, 208, 0);" class="ri-sun-fill"></i> Upcoming Summer Event with InPanels Development Team! Learn more in our 
+            <a href="#summerinfo" class="underline text-blue-400 hover:text-blue-500">Summer Event Info</a>.
+        </span>
+    
+        </div>
+    </div>
+  
+    
+
+      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+    <script src="example.js"></script>
+</body>
+</html>
