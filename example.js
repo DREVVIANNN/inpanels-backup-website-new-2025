@@ -79,3 +79,13 @@ const fadeIn = (id) => {
     document.getElementById('popup').style.display = 'none';
   }
 
+  window.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll(".bar");
+    bars.forEach(bar => {
+      const target = bar.getAttribute("data-target");
+      const height = (parseInt(target) / 100) * 256; // 256px = 100%
+      setTimeout(() => {
+        bar.style.height = height + "px";
+      }, 200);
+    });
+  });

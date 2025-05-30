@@ -1757,7 +1757,16 @@
       background-size: 200% 200%;
       animation: border-spin 4s linear infinite;
     }
-  
+
+    .bar {
+      transition: height 1s ease-in-out;
+    }
+
+    .grid-bg {
+      background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px),
+                        linear-gradient(to top, #e5e7eb 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
 
   blockquote {
     border-left: 4px solid #3f83f8;

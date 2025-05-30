@@ -109,20 +109,20 @@
       </div>
 
       <div class="border-t border-gray-700 pt-6 md:grid md:grid-cols-4 md:gap-8">
-        <p class="text-sm text-gray-500 col-span-1">date date, date</p>
+        <p class="text-sm text-gray-500 col-span-1">MAY 30, 2025</p>
         <div class="col-span-3 space-y-1">
-          <h3 class="text-xl font-semibold">Upcoming article our update...</h3>
-          <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt corporis aperiam doloremque tempore, culpa rem odit inventore! Maxime corporis error accusamus ipsa excepturi. Sapiente accusamus aperiam iusto placeat. Sunt, quam.</p>
-          <a href="#" class="text-blue-400 hover:underline text-sm">Read more</a>
+          <h3 class="text-xl font-semibold">Our Website Has Been Updated To V3.7B!</h3>
+          <p class="text-gray-400">The Website has been update to version 3.7B! our latest update, packed with improvements to enhance your experience on the site. Here’s what’s new in version 3.7B...</p>
+          <a href="halaman-article-ke-sembilan.html" class="text-blue-400 hover:underline text-sm">Read more</a>
         </div>
       </div>
 
       <div class="border-t border-gray-700 pt-6 md:grid md:grid-cols-4 md:gap-8">
-        <p class="text-sm text-gray-500 col-span-1">date date, date</p>
+        <p class="text-sm text-gray-500 col-span-1">MAY 30, 2025</p>
         <div class="col-span-3 space-y-1">
-          <h3 class="text-xl font-semibold">Upcoming article our update...</h3>
-          <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt corporis aperiam doloremque tempore, culpa rem odit inventore! Maxime corporis error accusamus ipsa excepturi. Sapiente accusamus aperiam iusto placeat. Sunt, quam.</p>
-          <a href="#" class="text-blue-400 hover:underline text-sm">Read more</a>
+          <h3 class="text-xl font-semibold">About - InPanels Development</h3>
+          <p class="text-gray-400">Welcome to InPanels Development, a creative and passionate digital development studio committed to crafting innovative web solutions, engaging platforms, and modern user ex...</p>
+          <a href="halaman-article-ke-sepuluh.html" class="text-blue-400 hover:underline text-sm">Read more</a>
         </div>
       </div>
   </section>
@@ -132,37 +132,6 @@
     &copy; 2025 InPanels Development. All rights reserved
   </footer>
   
-
-  <script>
-    // Wait until DOM is fully loaded
-    document.addEventListener("DOMContentLoaded", () => {
-      const searchInput = document.getElementById("searchInput");
-      const articles = document.querySelectorAll(".article");
-
-      function searchArticles() {
-        const query = searchInput.value.toLowerCase();
-        articles.forEach(article => {
-          const title = article.querySelector("h2").textContent.toLowerCase();
-          const desc = article.querySelector("p").textContent.toLowerCase();
-          article.style.display = title.includes(query) || desc.includes(query) ? "block" : "none";
-        });
-      }
-
-      if (searchInput) {
-        searchInput.addEventListener("keypress", (e) => {
-          if (e.key === "Enter") {
-            searchArticles();
-          }
-        });
-      }
-
-      const searchButton = document.getElementById("searchButton");
-      if (searchButton) {
-        searchButton.addEventListener("click", searchArticles);
-      }
-    });
-  </script>
-
       <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
       <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
 
