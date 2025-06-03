@@ -15,6 +15,12 @@
 </head>
 <body class="bg-gray-900 text-white">
 
+      <div id="splash"
+      class="fixed inset-0 flex items-center justify-center z-50">
+      <img src="assets/img/Proyek Baru 82 [C39BEED].png" alt="Splash Image" class="w-[500px] h-auto" />
+      </div>
+
+      <div id="main-content">
     <header class="sticky top-0 z-50 bg-gray-900 flex items-center justify-between p-3 max-w-7xl mx-auto">
       <div class="text-xl font-bold">InPanels.Dev</div>
       <nav class="hidden md:flex gap-6 text-sm">
@@ -33,7 +39,7 @@
         <div id="demoMenu" class="absolute right-0 top-14 text-gray-300 bg-gray-900 border rounded-md shadow-md w-48 hidden z-50">
           <a href="#home" class="block px-4 py-3 hover:bg-gray-800 text-sm">Home</a>
           <a href="#about" class="block px-4 py-3 hover:bg-gray-800 text-sm">About Us</a>
-          <a href="error-404-page-not-found" class="cursor-pointer block px-4 py-3 hover:bg-gray-800 text-sm">ATHENA FAMILY</a>
+          <a href="athenafamily" class="cursor-pointer block px-4 py-3 hover:bg-gray-800 text-sm">ATHENA FAMILY</a>
           <a href="halaman-services-inpanels" class="cursor-pointer block px-4 py-3 hover:bg-gray-800 text-sm">Services</a>
           <a href="halaman-article" class="cursor-pointer block px-4 py-3 hover:bg-gray-800 text-sm">Baca Artikel <i class="ri-fire-fill text-yellow-600"></i></a>
           <a href="privacy-and-policy" class="block px-4 py-3 hover:bg-gray-800 text-sm">Privacy & Policy</a>
@@ -42,6 +48,7 @@
         </div>
 
         <select class="text-sm bg-gray-900 border rounded-md px-2 py-1">
+          <option>V4.0.1</option>
           <option>V3.9</option>
           <option>V3.7B</option>
           <option>V3.1</option>
@@ -64,7 +71,7 @@
         </div>
 
     <div id="demoModal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
-        <div class="bg-gray-900 w-full max-w-md mx-4 rounded-xl shadow-xl p-6 relative animate-fade-in border border-red-800">
+        <div class="bg-gray-900 w-full max-w-md mx-4 rounded-xl shadow-xl p-6 relative animate-fade-in border border-gray-600">
 
         <button onclick="document.getElementById('demoModal').classList.add('hidden')" 
                 class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-lg">
@@ -75,7 +82,7 @@
     
         <div class="flex flex-col gap-3">
             <a href="https://saweria.co/drevviann">
-              <button class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg font-medium hover:bg-gray-800 transition duration-1000">
+              <button class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg font-medium hover:bg-gray-800 transition duration-500">
                 <i class="ri-hand-coin-fill"></i> Via Saweria
               </button>
             </a>
@@ -86,11 +93,11 @@
   
         <div class="grid grid-cols-2 gap-6 mt-10">
           <div>
-            <h3 class="text-2xl font-bold">V3.9</h3>
+            <h3 class="text-2xl font-bold">V4.0.1</h3>
             <p class="text-sm text-gray-300">Web Version</p>
           </div>
           <div>
-            <h3 class="text-2xl font-bold">~5/31/2025</h3>
+            <h3 class="text-2xl font-bold">~6/4/2025</h3>
             <p class="text-sm text-gray-300">Latest Update</p>
           </div>
           <div class="col-span-2 flex items-center mt-4">
@@ -111,17 +118,17 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
             
             <div class="p-6 bg-gray-700 rounded-xl shadow-md">
-            <p class="text-4xl font-bold text-gray-300 counter" data-target="6">0</p>
-            <p class="text-gray-300 mt-2">Video Uploaded</p>
+            <p class="text-4xl font-bold text-gray-300">6/4/2025</p>
+            <p class="text-gray-300 mt-2">Latest Update</p>
             </div>
     
             <div class="p-6 bg-gray-700 rounded-xl shadow-md">
-            <p class="text-4xl font-bold text-gray-300 counter" data-target="12">0</p>
+            <p class="text-4xl font-bold text-gray-300 counter" data-target="13">0</p>
             <p class="text-gray-300 mt-2">Articles Available</p>
             </div>
     
             <div class="p-6 bg-gray-700 rounded-xl shadow-md">
-            <p class="text-4xl font-bold text-gray-300">V3.9</p>
+            <p class="text-4xl font-bold text-gray-300">V4.0.1</p>
             <p class="text-gray-300 mt-2">Web Version</p>
             </div>
     
@@ -132,11 +139,11 @@
     <section class="mb-20 px-6 md:px-12 scroll-mt-20" id="about">
         <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-400 opacity-0 translate-y-6 transition-all duration-1000 ease-out" id="aboutHeading">
-            About Us
+           <blockquote class="text-gray-300 border-l-gray-300">About Us</blockquote>
         </h2>
         <p class="mt-4 text-gray-200 text-base md:text-lg leading-relaxed opacity-0 translate-y-6 transition-all duration-1000 ease-out delay-100" id="aboutText">
             <strong>Welcome to InPanels Development</strong>, a creative and passionate digital development studio committed to crafting innovative web solutions, engaging platforms, and modern user experiences. Founded with vision and ambition, our journey began with a single idea—to build tools, platforms, and experiences that empower creators, connect communities, and shape the digital future.
-            <a href="halaman-article-ke-sepuluh.html" class="text-blue-400 underline">Read more</a>
+            <a href="halaman-article-ke-sepuluh" class="text-blue-400 underline">Read more</a>
         </p>
     
         <div class="mt-10 grid md:grid-cols-2 gap-12">
@@ -159,67 +166,36 @@
         </div>
     </section>
 
-    <section class="py-12 px-4 md:px-8 animate-fade-in">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
-        
-          
-          <div class="w-full max-w-7xl p-6 bg-gray-800 shadow-2xl rounded-xl">
-            <h1 class="text-3xl font-bold mb-6 text-gray-300">In renovation...</h1>
-        
-            <div class="grid-bg relative flex items-end justify-between h-64 border-b-2 border-gray-600 pb-4 px-4">
+    <section class="py-20 px-4 md:px-10 animate-fade-in animate-fade-up">
+      <h2 class="max-w-7xl mx-auto text-3xl font-bold text-white mb-10">
+          <blockquote class="text-gray-300 border-l-gray-300">Pinned Posts</blockquote>
+      </h2>
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
 
-              <div class="flex flex-col items-center">
-                <div class="bar w-10 bg-gray-600 rounded-none" style="height: 0;" data-target="90"></div>
-                <span class="mt-2 text-sm font-medium text-gray-300">NaN</span>
-              </div>
+      <div class="bg-zinc-800 p-4 rounded-lg shadow-md hover:shadow-xl transition">
+        <a href="halaman-article-ke-sebelas" target="_blank">
+          <img src="https://c2c.fp.guinfra.com/file/682c478f4351639b577dd5d8PiCFLN1u03" alt="Post 1" class="w-full h-48 object-cover rounded-md mb-4" />
+        </a>
+          <p class="text-zinc-300"><i class="ri-pushpin-fill"></i> The long-anticipated update for Wuthering Waves, titled Version 2.4: “Lightly We Toss the Crown”, introduces a wealth of content enhancements, narrative expansions, and game 
+          <a href="halaman-article-ke-sebelas" class="text-blue-400 underline">Read more</a></p>
+      </div>
 
-              <div class="flex flex-col items-center">
-                <div class="bar w-10 bg-gray-600 rounded-none" style="height: 0;" data-target="90"></div>
-                <span class="mt-2 text-sm font-medium text-gray-300">NaN</span>
-              </div>
+      <div class="bg-zinc-800 p-4 rounded-lg shadow-md hover:shadow-xl transition">
+          <a href="halaman-article-dua-belas" target="_blank">
+          <img src="https://img.game8.co/4167558/c31e562f3811eb496bed80750fc72d87.png/show" alt="Post 1" class="w-full h-48 object-cover rounded-md mb-4" />
+          </a>
+          <p class="text-zinc-300"><i class="ri-pushpin-fill"></i> Selamat datang di pusat informasi lengkap All Events untuk pembaruan Wuthering Waves versi 2.4! Dalam versi terbaru ini, dunia Wuthering Waves kembali dipenuhi dengan berbagai 
+          <a href="halaman-article-dua-belas" class="text-blue-400 underline">Read more</a><p>
+      </div>
 
-              <div class="flex flex-col items-center">
-                <div class="bar w-10 bg-gray-600 rounded-none" style="height: 0;" data-target="90"></div>
-                <span class="mt-2 text-sm font-medium text-gray-300">NaN</span>
-              </div>
-
-              <div class="flex flex-col items-center">
-                <div class="bar w-10 bg-gray-600 rounded-none" style="height: 0;" data-target="90"></div>
-                <span class="mt-2 text-sm font-medium text-gray-300">NaN</span>
-              </div>
-            </div>
-          </div>
-      
-          <div class="w-full max-w-7xl p-6 bg-gray-800 shadow-2xl rounded-xl">
-            <h1 class="text-3xl font-bold mb-6 text-gray-300">In renovation...</h1>
-        
-            <div class="grid-bg relative flex items-end justify-between h-64 border-b-2 border-gray-600 pb-4 px-4">
-
-              <div class="flex flex-col items-center">
-                <div class="bar w-10 bg-gray-600 rounded-none" style="height: 0;" data-target="90"></div>
-                <span class="mt-2 text-sm font-medium text-gray-300">NaN</span>
-              </div>
-
-              <div class="flex flex-col items-center">
-                <div class="bar w-10 bg-gray-600 rounded-none" style="height: 0;" data-target="90"></div>
-                <span class="mt-2 text-sm font-medium text-gray-300">NaN</span>
-              </div>
-
-              <div class="flex flex-col items-center">
-                <div class="bar w-10 bg-gray-600 rounded-none" style="height: 0;" data-target="90"></div>
-                <span class="mt-2 text-sm font-medium text-gray-300">NaN</span>
-              </div>
-
-              <div class="flex flex-col items-center">
-                <div class="bar w-10 bg-gray-600 rounded-none" style="height: 0;" data-target="90"></div>
-                <span class="mt-2 text-sm font-medium text-gray-300">NaN</span>
-              </div>
-            </div>
-          </div>
-      
-      
-        </div>
-      </section>
+      <div class="bg-zinc-800 p-4 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="assets/img/ProyekBaru695B796DF-ezgif.com-video-to-gif-converter.gif" alt="Post 3" class="w-full h-48 object-cover rounded-md mb-4" />
+          <p class="text-zinc-300"><i class="ri-pushpin-fill"></i> We’re beyond excited to unveil the next major step in our journey: Version 4.0.1 of InPanels.Dev! This release marks more than just a routine update — it’s a reflection of our ongoing commitment 
+          <a href="halaman-article-tiga-belas" class="text-blue-400 underline">Read more</a></p>
+      </div>
+  
+      </div>
+  </section>
 
 
   <section id="contact" class="py-20 px-4 md:px-10">
@@ -227,7 +203,9 @@
       
 
       <div class="space-y-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-400 animate-fade-in">Contact Us</h2>
+        <h2 class="text-3xl font-bold text-white mb-10 animate-fade-in">
+          <blockquote class="text-gray-300 border-l-gray-300">Contact Us</blockquote>
+        </h2>
         <p class="text-gray-200 text-md animate-fade-in">We're here to answer your questions and help you. Drop us a message and we'll get back to you as soon as we can!</p>
         <img src="assets/img/Proyek Baru 82 [C39BEED].png" alt="Contact" class="rounded-xl bg-hero w-full max-w-sm animate-fade-in-up">
       </div>
@@ -235,7 +213,7 @@
       <form action="https://api.web3forms.com/submit" method="POST" class="bg-gray-800 shadow-xl rounded-2xl p-8 space-y-6 animate-fade-in-up">
         <input type="hidden" name="access_key" value="e722d3ae-0c77-4eae-aa19-3618e9f38bc5" />
 
-        <input type="hidden" name="redirect" value="https://inpanels.site/thank-you.html">
+        <input type="hidden" name="redirect" value="https://inpanels.site/thank-you">
 
         <div>
             <label for="name" class="text-sm font-semibold text-gray-50 block mb-1">Your Name</label>
@@ -276,7 +254,27 @@
     
         </div>
     </div>
-  
+
+      </div>
+
+      <style>
+        .fade-out {
+          opacity: 0;
+          transition: opacity 1s ease-out;
+          pointer-events: none;
+        }
+      </style>
+
+      <script>
+        window.addEventListener('load', () => {
+          const splash = document.getElementById('splash');
+          setTimeout(() => {
+            splash.classList.add('fade-out');
+            setTimeout(() => splash.style.display = 'none', 1000);
+          }, 1000);
+        });
+      </script>
+        
     
 
       <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
