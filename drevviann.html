@@ -97,6 +97,49 @@
   <footer class=" max-w-7xl mx-auto text-gray-500 py-8 border-t border-gray-700">
     &copy; 2025 InPanels Development. All rights reserved
   </footer>
+
+
+  <style>
+    .border-animated {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .border-animated::before,
+    .border-animated::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid white;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      transition: transform 0.5s ease;
+    }
+
+    .border-animated::before {
+      transform: scaleX(0);
+      transform-origin: left;
+      border-top: none;
+      border-bottom: none;
+    }
+
+    .border-animated::after {
+      transform: scaleY(0);
+      transform-origin: top;
+      border-left: none;
+      border-right: none;
+    }
+
+    .border-animated:hover::before {
+      transform: scaleX(1);
+    }
+
+    .border-animated:hover::after {
+      transform: scaleY(1);
+    }
+  </style>
   
     
 
