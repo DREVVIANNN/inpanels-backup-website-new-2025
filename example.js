@@ -89,3 +89,12 @@ const fadeIn = (id) => {
       }, 200);
     });
   });
+
+  function toggleModal(show) {
+    const modal = document.getElementById('eventModal');
+    if (show) {
+      modal.classList.remove('hidden');
+    } else {
+      modal.classList.add('hidden');
+    }
+  }
