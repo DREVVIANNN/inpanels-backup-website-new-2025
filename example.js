@@ -98,3 +98,14 @@ const fadeIn = (id) => {
       modal.classList.add('hidden');
     }
   }
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBY54WfX5xhYzlmOjDPDWhDn1vl3FH3u50",
+    authDomain: "inpanels-game.firebaseapp.com",
+    projectId: "inpanels-game",
+    storageBucket: "inpanels-game.firebasestorage.app",
+    messagingSenderId: "650159717173",
+    appId: "1:650159717173:web:08c41c28aca9a2e69c6a7c"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
