@@ -17,7 +17,7 @@
 <body class="overflow-x-hidden">    
     
   <!-- Random Word Background Container -->
-  <div id="background-words" class="absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
+  <div id="bg-word-layer" class="absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
 
 
   <!-- User Profile Section -->
@@ -195,7 +195,23 @@
   </div>
 </footer>
 
-  
+<script>
+  const words = ["Union", "Anomali", "Streamer", "Yapping", "Suami Cartethiya"];
+  const bgLayer = document.getElementById("bg-word-layer");
+
+  for (let i = 0; i < 60; i++) {
+    const span = document.createElement("span");
+    span.innerText = words[Math.floor(Math.random() * words.length)];
+    span.className = "absolute text-black/5 font-extrabold whitespace-nowrap select-none";
+    span.style.fontSize = `${Math.floor(Math.random() * 40) + 24}px`;
+    span.style.top = `${Math.random() * 100}vh`;
+    span.style.left = `${Math.random() * 100}vw`;
+    span.style.transform = `rotate(${Math.random() * 30 - 15}deg)`;
+    span.style.animation = `floatWord 8s ease-in-out infinite alternate ${Math.random() * 3}s`;
+    bgLayer.appendChild(span);
+  }
+</script>
+
     
 
       <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
