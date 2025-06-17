@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html class="bg-[#fef0e6] text-black scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,128 +14,187 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
      <script async src="https://www.tiktok.com/embed.js"></script>
 </head>
-<body class="bg-gray-900 text-gray-800">    
+<body class="overflow-x-hidden">    
     
-      <!-- Navigation -->
-  <header class="sticky top-0 z-50 bg-[#0e1525] text-white shadow border-b border-gray-700">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <h1 class="text-lg font-semibold">InPanels.Dev</h1>
-    </div>
-  </header>
+  <!-- Random Word Background Container -->
+  <div id="background-words" class="absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
 
-  <!-- Article Header -->
-  <section class="max-w-7xl mx-auto px-4 py-16 animate-fade-in-left">
-    <p class="text-sm text-gray-400">MAY 27, 2025</p>
-    <div class="absolute z-0 right-0 top-0 sm-h[400px]">
-      <img src="assets/img/IMG-20250528-WA0145-removebg-preview.png" alt="Hero" class="w-[235px] md:w-[300px] opacity-40" />
-    </div>
-    <h1 class="text-4xl md:text-5xl text-gray-300 font-bold tracking-tight mt-2">Tentang - Union (@unionrill)</h1>
 
-    <!-- Author -->
-    <div class="flex items-center space-x-4 mt-6">
-        <div class="relative w-14 h-14 rounded-full p-1 bg-gradient-to-r from-yellow-400 to-yellow-600 animate-border-spin shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out">
-            <div class="w-full h-full bg-[#1e293b] rounded-full flex items-center justify-center overflow-hidden">
-              <img src="assets/img/4ebb9192d02fc162fc5d9f14718367db~tplv-tiktokx-cropcenter_1080_1080.jpg" alt="Profile" class="rounded-full w-full h-full object-cover">
-            </div>
-          </div>          
-      <div>
-        <div class="group select-none">
-          <div class="flex items-center gap-2">
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              UR
-            </span>
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              UR
-            </span>
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              UR
-            </span>
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              UR
-            </span>
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              UR
-            </span>
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              UR
-            </span>
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              UR
-            </span>
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              UR
-            </span>
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              UR
-            </span>
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              UR
-            </span>
-            <p class="font-medium text-blue-400"><i class="ri-verified-badge-fill"></i> Union</p>
+  <!-- User Profile Section -->
+  <section class="relative max-w-6xl mx-auto mt-12 px-6">
+      <div class="flex items-center space-x-4">
+      <!-- Profile Avatar -->
+      <div class="relative w-14 h-14 rounded-full p-1 bg-gradient-to-r from-yellow-400 to-yellow-600 animate-border-spin shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out">
+          <div class="w-full h-full bg-[#1e293b] rounded-full flex items-center justify-center overflow-hidden">
+          <img src="assets/img/4ebb9192d02fc162fc5d9f14718367db~tplv-tiktokx-cropcenter_1080_1080.jpg" alt="Profile" class="rounded-full w-full h-full object-cover">
           </div>
-            <p class="text-gray-400 text-sm">@unionrill <i class="ri-star-fill text-yellow-500"></i></p>
-            <div class="absolute ml-16 -translate-x-1/2 mt-2 w-max px-3 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                Union Official Account  <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-                  UR
-                </span>
-            </div>
-        </div>
       </div>
-    </div>
-
-    <!-- Article Content -->
-    <article class="prose prose-invert max-w-none mt-3 text-gray-200">
-        <p>
-            Union, dikenal dengan nama pengguna TikTok @unionrill, adalah seorang kreator konten yang aktif membagikan video seputar game, khususnya Wuthering Waves dan Genshin Impact. Dengan lebih dari 3.000 pengikut dan 162.000 suka, Union sering melakukan siaran langsung pada pukul 16.00 WIB, di mana ia berinteraksi langsung dengan para penontonnya.
-        </p> <br>
-
-        <p>
-            Konten yang dibagikan oleh Union mencakup berbagai aspek permainan, seperti pengalaman bermain, showcase karakter, serta momen-momen menarik dalam game. Beberapa video yang menonjol antara lain:
-        </p> <br>
-
-        <p>
-            <li class="list-disc">
-                <a class="underline" href="https://www.tiktok.com/@unionrill/video/7507409217595133192?is_from_webapp=1&sender_device=pc">Grafik lowest tapi masih keliatan bagus ? gimana caranya ? liat vidionya 😹</a>
-            </li>
-            <br>
-            <li class="list-disc">
-                <a class="underline" href="https://www.tiktok.com/@unionrill/video/7505769604967451922?is_from_webapp=1&sender_device=pc">Showcase dps tier 0 bilek  ib :@sgntrs_gameplay</a>
-            </li>
-            <br>
-            <li class="list-disc">
-                <a class="underline" href="https://www.tiktok.com/@unionrill/video/7438311790544571666?is_from_webapp=1&sender_device=pc">kururin~ #jinhsi  #camellya  #wuwa  #wutheringwaves  #kurukuru  #fyp  </a>
-            </li>
-        </p> <br>
-
-        <p>
-            Union juga dikenal aktif dalam komunitas game, sering kali menggunakan tagar seperti #wuwacreator dan #wuwacontest untuk berpartisipasi dalam berbagai kontes dan tantangan yang berkaitan dengan Wuthering Waves.
-        </p> <br>
-
-        <p>
-            Untuk mendukung komunitasnya lebih lanjut, Union menyediakan tautan ke server Discord dan platform dukungan lainnya melalui profil TikTok-nya. Jika Anda tertarik dengan konten seputar Wuthering Waves atau ingin berinteraksi langsung, Anda dapat mengikuti siaran langsungnya setiap hari pada pukul 16.00 WIB.
-        </p> <br>
-
-        <p>
-            Untuk informasi lebih lanjut dan konten terbaru dari Union, kunjungi profil TikTok resminya di <a class="text-blue-400 underline" href="https://www.tiktok.com/@unionrill">@unionrill</a>.
-        </p>  <br>
-
-        <p>
-            <strong>Berikan Dukungan Kepada @unionrill :</strong>
-            <a href="https://sociabuzz.com/union/donate" target="_blank">
-                <img src="https://ugc.production.linktr.ee/ba94cd22-d39d-4ff2-ac1a-0143c16a443c_1000077961.jpeg" class="mt-3 w-[50px] rounded-full" alt="">
-            </a>
-        </p>
-    </article>
-
-    <div class="mt-10">
-        <a class="text-blue-400 underline hover:text-blue-500 transition duration-500" href="halaman-article.html"><i class="ri-arrow-left-line"></i> Back To Our Update</a>
-    </div>
+  
+      <!-- Profile Info -->
+      <div>
+          <div class="group relative select-none">
+          <div class="flex items-center gap-2">
+              <span class="bg-gradient-to-l from-red-700 to-red-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">UR</span>
+              <span class="bg-gradient-to-l from-red-700 to-red-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">Cartethiya Husband</span>
+              <p class="font-medium text-blue-400"><i class="ri-verified-badge-fill"></i> Union</p>
+          </div>
+          <p class="text-gray-400 text-sm">@unionrill <i class="ri-star-fill text-yellow-500"></i></p>
+          
+          <!-- Hover Tooltip -->
+          <div class="absolute ml-16 -translate-x-1/2 mt-2 w-max px-3 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+              Union Official Account 
+              <span class="bg-gradient-to-l from-red-700 to-red-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">UR</span>
+          </div>
+          </div>
+      </div>
+      </div>
   </section>
 
-  <!-- Footer -->
-  <footer class=" max-w-7xl mx-auto text-gray-500 py-8 border-t border-gray-700">
-    &copy; 2025 InPanels Development. All rights reserved
-  </footer>
+
+<!-- Hero Section -->
+ <section class="relative">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between py-12 px-6">
+  <!-- Left Text -->
+  <div class="md:w-1/2 space-y-6">
+    <h1 class="text-5xl font-extrabold tracking-widest leading-tight">
+      Union<br>Cartethiya<br>Husband
+    </h1>
+    <div class="bg-black text-white px-4 py-3 rounded-xl max-w-sm">
+      <div class="text-sm uppercase tracking-widest">Traktir Aku Dong😋</div>
+      <div class="flex justify-between items-center mt-1">
+        <span class="text-xs">Traktir aku (@unionrill) dengan sociabuzz 🤩</span>
+        <a href="https://sociabuzz.com/union/donate"><button class="text-xs border px-3 py-1 rounded-full border-white hover:bg-white hover:text-black transition">Sociabuzz →</button></a>
+      </div>
+    </div>
+    <p class="text-sm font-medium max-w-md bg-white p-4 rounded-xl border-l-4 border-black">
+      "Hai, namaku Union, aku adalah seorang tiktoker wuthering waves yang menyajikan konten dengan seputar build karakter dll"
+    </p> <br>
+    <a href="">
+      <button class="bg-black text-white rounded-full px-6 py-2 hover:bg-white hover:text-black border border-black transition">
+          <i class="ri-discord-fill mr-3 text-blue-400"></i> Join Discord
+        </button>
+    </a>
+  </div>
+
+  <!-- Right Anime Image -->
+  <div class="relative overflow-x-hidden w-full">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-16">
+    <!-- Background lines -->
+    <div class="md:w-1/2 mt-10 md:mt-0 relative overflow-hidden h-full w-full">
+    <div class="absolute inset-0 -z-10 space-y-4 opacity-20 rotate-6">
+      <div class="bg-black h-4 w-3/4"></div>
+      <div class="bg-black h-4 w-2/3"></div>
+      <div class="bg-black h-4 w-4/5"></div>
+      <div class="bg-black h-4 w-3/5"></div>
+    </div>
+    <img src="https://github.com/DREVVIANNN/PP-zani-baru-wkwkwk/blob/main/Screenshot_20250617-162732-removebg-preview.png?raw=true" alt="Anime Character" class="w-full max-w-sm mx-auto drop-shadow-2xl">
+  </div>
+</div>
+  </div>
+</div>
+ </section>
+
+<!-- About Me Section -->
+<section class="relative max-w-6xl mx-auto py-12 px-6">
+  <div class="max-w-6xl mx-auto mb-12">
+    <h2 class="text-4xl font-extrabold mb-4">About Me</h2>
+    <p class="text-gray-700 text-lg">
+      Siapakah aku? (@unionrill), di baca! jangan di pelototin doang!
+    </p>
+  </div>
+
+  <div class="flex flex-col md:flex-row justify-between gap-6">
+    <!-- Card 1 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg border border-black w-full md:w-1/3 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up">
+      <h3 class="text-xl font-bold mb-2">Awal Mula Jadi Karbit</h3>
+      <p class="text-gray-600 text-sm">
+        Dulunya normal, sekarang jadi karbit, kebanyakan karakter cantik baru dari developer wuwa, malah ujung2nya birahi sama 2d😹
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg border border-black w-full md:w-1/3 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-200">
+      <h3 class="text-xl font-bold mb-2">Streamer Skill Issue</h3>
+      <p class="text-gray-600 text-sm">
+        Skill issue emang dah biasa ada di setiap orang, dan ga semua orang itu harus jago, lagi pula game story jir😹
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg border border-black w-full md:w-1/3 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-400">
+      <h3 class="text-xl font-bold mb-2">Konten Kreator Wuwa</h3>
+      <p class="text-gray-600 text-sm">
+          Selain live streaming harian setiap jam 4 sore wib, aku juga membuat konten wuthering waves tentang build charachter dll.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Video Thumbnails -->
+<div class="max-w-6xl mx-auto py-12 px-6">
+  <h3 class="text-xl md:text-2xl font-semibold mb-6"><i class="ri-video-on-fill"></i> Pinned Videos</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+
+    <a href="https://www.tiktok.com/@unionrill/photo/7516830960629943570?is_from_webapp=1&sender_device=pc">
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="assets/img/post1.png" alt="Video 1" class="w-full object-cover">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="ri-play-circle-fill text-white text-5xl"></i>
+          </div>
+        </div>
+    </a>
+
+    <a href="https://www.tiktok.com/@unionrill/video/7507409217595133192?is_from_webapp=1&sender_device=pc">
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="assets/img/post2.png" alt="Video 2" class="w-full object-cover">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="ri-play-circle-fill text-white text-5xl"></i>
+          </div>
+        </div>
+    </a>
+
+    <a href="https://www.tiktok.com/@unionrill/video/7505769604967451922?is_from_webapp=1&sender_device=pc">
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="assets/img/post3.png" alt="Video 3" class="w-full object-cover">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="ri-play-circle-fill text-white text-5xl"></i>
+          </div>
+        </div>
+    </a>
+  </div>
+</div>
+
+<footer class="bg-[#0f172a] text-white py-10 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Brand/Logo -->
+    <div>
+      <h2 class="text-2xl font-bold text-gradient bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent">Union</h2>
+      <p class="text-sm text-gray-400 mt-2">Powered by InPanels Development.</p>
+      <p class="text-xs text-gray-600 mt-1">&copy; 2025 DV Arts. All rights reserved.</p>
+      <p class="text-xs text-gray-600 mt-1">&copy; 2025 RemixIcon. All rights reserved.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3">More</h3>
+      <ul class="space-y-2 text-sm text-gray-400">
+        <li><a href="masemasch" class="hover:text-white transition">Masemas Ch</a></li>
+        <li><a href="ryankhunam" class="hover:text-white transition">Ryankhunam</a></li>
+        <li><a href="drevviann" class="hover:text-white transition">DREVVIANN</a></li>
+      </ul>
+    </div>
+
+    <!-- Socials -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3">Connect</h3>
+      <div class="flex space-x-4 text-xl">
+        <a href="https://tiktok.com/@unionrill" target="_blank" class="hover:text-pink-400 transition"><i class="ri-tiktok-fill"></i></a>
+        <a href="https://discord.com/invite/TaBu5EreSj" class="hover:text-blue-400 transition"><i class="ri-discord-fill"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
   
     
 

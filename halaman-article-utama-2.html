@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Update - InPanels.Dev</title>
+    <title>Our Update 2 - InPanels.Dev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     <link rel="shortcut icon" href="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn.jpg" type="image/x-icon">
@@ -14,6 +14,8 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 </head>
 <body class="bg-gray-900 text-gray-50">
+
+  <div id="background-words" class="fixed inset-0 -z-10 pointer-events-none overflow-hidden"></div>
 
   <!-- Navbar -->
   <header class="sticky top-0 z-50 bg-[#0e1525] shadow border-b border-gray-700">
@@ -115,7 +117,25 @@
     &copy; 2025 InPanels Development. All rights reserved
   </footer>
 
-  
+  <script>
+    const words = ["InPanels.Dev", "Article", "Update", "Collaboration", "Development", "Innovator", "Programmer"];
+    const container = document.getElementById("background-words");
+
+  for (let i = 0; i < 30; i++) {
+    const span = document.createElement("span");
+    span.textContent = words[Math.floor(Math.random() * words.length)];
+    span.className = "absolute text-white text-sm font-semibold opacity-10 select-none animate-float";
+
+    span.style.top = `${Math.random() * 100}vh`;
+    span.style.left = `${Math.random() * 100}vw`;
+    span.style.fontSize = `${Math.random() * 1.5 + 0.8}rem`;
+    span.style.transform += ` rotate(${Math.random() * 20 - 10}deg)`;
+
+    container.appendChild(span);
+  }
+
+  </script>
+
       <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
       <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
 
