@@ -22,7 +22,7 @@
 
   <!-- User Profile Section -->
   <section class="relative max-w-6xl mx-auto mt-12 px-6">
-      <div class="flex items-center space-x-4">
+    <div class="flex items-center space-x-4 bg-gray-900 border border-gray-900 w-max rounded-lg px-2 py-1">
       <!-- Profile Avatar -->
       <div class="relative w-14 h-14 rounded-full p-1 bg-gradient-to-r from-yellow-400 to-yellow-600 animate-border-spin shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out">
           <div class="w-full h-full bg-[#1e293b] rounded-full flex items-center justify-center overflow-hidden">
@@ -53,23 +53,23 @@
 
 <!-- Hero Section -->
  <section class="relative">
-<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between py-12 px-6">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between py-12 px-6">
   <!-- Left Text -->
   <div class="md:w-1/2 space-y-6">
-    <h1 class="text-5xl font-extrabold tracking-widest leading-tight">
+    <h1 class="text-5xl font-sans font-extrabold tracking-widest leading-tight">
       Union<br>Cartethiya<br>Husband
     </h1>
     <div class="bg-black text-white px-4 py-3 rounded-xl max-w-sm">
       <div class="text-sm uppercase tracking-widest">Traktir Aku Dong😋</div>
       <div class="flex justify-between items-center mt-1">
-        <span class="text-xs">Traktir aku (@unionrill) dengan sociabuzz 🤩</span>
+        <span class="text-xs">Traktir aku (@unionrill) dengan <br> sociabuzz 🤩</span>
         <a href="https://sociabuzz.com/union/donate"><button class="text-xs border px-3 py-1 rounded-full border-white hover:bg-white hover:text-black transition">Sociabuzz →</button></a>
       </div>
     </div>
     <p class="text-sm font-medium max-w-md bg-white p-4 rounded-xl border-l-4 border-black">
       "Hai, namaku Union, aku adalah seorang tiktoker wuthering waves yang menyajikan konten dengan seputar build karakter dll"
     </p> <br>
-    <a href="">
+    <a href="https://discord.com/invite/TaBu5EreSj">
       <button class="bg-black text-white rounded-full px-6 py-2 hover:bg-white hover:text-black border border-black transition">
           <i class="ri-discord-fill mr-3 text-blue-400"></i> Join Discord
         </button>
@@ -196,14 +196,17 @@
 </footer>
 
 <script>
+ const isMobile = window.innerWidth < 40; // Tailwind's "sm" breakpoint
+  const wordCount = isMobile ? 10 : 40; // fewer on mobile
   const words = ["Union", "Anomali", "Streamer", "Yapping", "Suami Cartethiya"];
+
   const bgLayer = document.getElementById("bg-word-layer");
 
-  for (let i = 0; i < 60; i++) {
+  for (let i = 0; i < wordCount; i++) {
     const span = document.createElement("span");
     span.innerText = words[Math.floor(Math.random() * words.length)];
     span.className = "absolute text-black/5 font-extrabold whitespace-nowrap select-none";
-    span.style.fontSize = `${Math.floor(Math.random() * 40) + 24}px`;
+    span.style.fontSize = `${Math.floor(Math.random() * 30) + 16}px`;
     span.style.top = `${Math.random() * 100}vh`;
     span.style.left = `${Math.random() * 100}vw`;
     span.style.transform = `rotate(${Math.random() * 30 - 15}deg)`;
