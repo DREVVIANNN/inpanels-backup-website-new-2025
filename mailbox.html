@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="bg-gray-900 text-gray-300 scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailbox - InPanels Development</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="shortcut icon" href="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8114226943532527"
+     crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+     <script async src="https://www.tiktok.com/embed.js"></script>
+</head>
+<body class="overflow-x-hidden">   
+
+  
+  <!-- Random Word Background Container -->
+  <div id="bg-word-layer" translate="no" aria-hidden="true" lang="zxx" class="notranslate absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
+
+  <div class="w-full max-w-3xl mx-auto rounded-2xl shadow-lg p-6 space-y-5 animate-fade-in">
+    <h1 class="text-2xl font-bold flex items-center gap-2">
+      <i class="ri-mail-unread-line text-yellow-400"></i> Mailbox
+    </h1>
+
+    <!-- Message List -->
+    <div class="space-y-3">
+
+      <div onclick="openPopup(1)" class="cursor-pointer border border-gray-700 rounded-lg p-4 hover:bg-gray-700 transition">
+        <div class="flex justify-between items-center">
+          <h2 class="font-semibold text-lg">📢 New Update Released</h2>
+          <span class="text-xs text-gray-400">~DV Arts</span>
+        </div>
+        <p class="text-gray-400 text-sm mt-1">Click to view</p>
+      </div>
+
+      <div onclick="openPopup(2)" class="cursor-pointer border border-gray-700 rounded-lg p-4 hover:bg-gray-700 transition">
+        <div class="flex justify-between items-center">
+          <h2 class="font-semibold text-lg">Collaboration Banned!</h2>
+          <span class="text-xs text-gray-400">~KuyFai</span>
+        </div>
+        <p class="text-gray-400 text-sm mt-1">Click to view</p>
+      </div>
+    </div>
+  </div>
+
+<div id="popupOverlay" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-gray-900 w-[90%] max-w-xl rounded-xl shadow-2xl p-6 relative animate-fade-in">
+      <button onclick="closeMail()" class="absolute top-2 right-3 text-gray-400 hover:text-red-400 text-xl">
+        <i class="ri-close-line"></i>
+      </button>
+      <h2 id="popupTitle" class="text-xl font-bold mb-3">Message Title</h2>
+      <div id="popupBody" class="text-sm text-gray-300 leading-relaxed"></div>
+      <div class="text-left mt-4 text-xs text-gray-500">— <span id="popupSender">Sender</span></div>
+    </div>
+  </div>
+  
+
+
+  <!-- Fade-in animation -->
+   <!-- Fade-in animation -->
+   <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.4s ease-out;
+    }
+  </style>
+
+  <!-- Toggle Script -->
+  <script>
+ const messages = {
+    1: {
+      title: "📢 New Update Released",
+      body: `
+        <p>We’ve added <strong>new website UI</strong> and fixed several bugs!</p>
+        <p>Explore the article and try the <em>new clean ui</em> today.</p>
+        <p class="text-gray-500 mt-2 italic">
+          New Version : V4.0.8
+          </p>      `,
+      sender: `
+        <i class="ri-hammer-fill text-blue-400"></i> <i class="ri-verified-badge-fill"></i> DV Arts.
+      `
+    },
+    2: {
+      title: "Collaboration Banned!",
+      body: `
+        <p>Hello, im <span class="text-red-900">@KuyFai</span></p>
+        <p>Head Staff of InPanels Develoment. has receive a report</p>
+        <p>that Violates Our Policies on <span class="text-blue-400 underline">Noctavy7</span> webpage.</p>
+            <p class="text-gray-500 mt-4 italic">
+          banned time: &infin; <br>  
+          reason: Violates Our Policies
+          </p>      `,
+      sender: `<i class="ri-verified-badge-fill"></i> <span class="text-red-900">@KuyFai</span>`
+    }
+  };
+
+  function openPopup(id) {
+    const msg = messages[id];
+    document.getElementById("popupTitle").innerHTML = msg.title;
+    document.getElementById("popupBody").innerHTML = msg.body;
+    document.querySelector("#popupOverlay .text-left").innerHTML = `— <strong>${msg.sender}</strong>`;
+    document.getElementById("popupOverlay").classList.remove("hidden");
+  }
+
+  function closeMail() {
+    const popup = document.getElementById("popupOverlay");
+    if (popup) {
+      popup.classList.add("hidden"); // ✅ This hides the popup
+    } else {
+      console.error("popupOverlay not found!");
+    }
+  }
+  </script>
+
+<script>
+  const isMobile = window.innerWidth < 40; // Tailwind's "sm" breakpoint
+  const wordCount = isMobile ? 10 : 40; // fewer on mobile
+  const words = ["は", "が", "に", "で", "も"];
+
+  const bgLayer = document.getElementById("bg-word-layer");
+
+  for (let i = 0; i < wordCount; i++) {
+    const span = document.createElement("span");
+    span.innerText = words[Math.floor(Math.random() * words.length)];
+    span.className = "absolute text-blue-100/10 font-extrabold whitespace-nowrap select-none";
+    span.style.fontSize = `${Math.floor(Math.random() * 30) + 16}px`;
+    span.style.top = `${Math.random() * 100}vh`;
+    span.style.left = `${Math.random() * 100}vw`;
+    span.style.transform = `rotate(${Math.random() * 30 - 15}deg)`;
+    span.style.animation = `floatWord 8s ease-in-out infinite alternate ${Math.random() * 3}s`;
+    bgLayer.appendChild(span);
+  }
+</script>
+
+
+    
+
+      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+    <script src="example.js"></script>
+</body>
+</html>

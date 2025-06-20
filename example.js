@@ -1,3 +1,17 @@
+// At the top of script.js
+if (window.location.pathname.includes("script.js")) {
+  window.location.replace("/");
+}
+// At the top of script.js
+if (window.location.pathname.includes("example.js")) {
+  window.location.replace("/");
+}
+// At the top of script.js
+if (window.location.pathname.includes("athena-family.js")) {
+  window.location.replace("/");
+}
+
+
 // Toggle menu logic
 const toggleBtn = document.getElementById('demoToggle');
 const menu = document.getElementById('demoMenu');
