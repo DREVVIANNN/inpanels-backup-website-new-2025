@@ -28,6 +28,14 @@
     <!-- Message List -->
     <div class="space-y-3">
 
+      <div onclick="openPopup(3)" class="cursor-pointer border border-gray-700 rounded-lg p-4 hover:bg-gray-700 transition">
+        <div class="flex justify-between items-center">
+          <h2 class="font-semibold text-lg">Introducing Web V4.1</h2>
+          <span class="text-xs text-gray-400">~KuyFai</span>
+        </div>
+        <p class="text-gray-400 text-sm mt-1">Click to view</p>
+      </div>
+
       <div onclick="openPopup(1)" class="cursor-pointer border border-gray-700 rounded-lg p-4 hover:bg-gray-700 transition">
         <div class="flex justify-between items-center">
           <h2 class="font-semibold text-lg">📢 New Update Released</h2>
@@ -56,7 +64,7 @@
       <div class="text-left mt-4 text-xs text-gray-500">— <span id="popupSender">Sender</span></div>
     </div>
   </div>
-  
+
 
 
   <!-- Fade-in animation -->
@@ -96,6 +104,16 @@
           banned time: &infin; <br>  
           reason: Violates Our Policies
           </p>      `,
+      sender: `<i class="ri-verified-badge-fill"></i> <span class="text-red-900">@KuyFai</span>`
+    },
+    3: {
+      title: "Introducing Web V4.1",
+      body: `
+        <p>Hello, im <span class="text-red-900">@KuyFai</span></p>
+        <p>Head Staff of InPanels Develoment.</p>
+        <p>for the upcoming update V4.1, it will a very big update that contain revamp for all user blog
+        also added a new secret button that use to get a new title like this: <span class="bg-gradient-to-l select-none from-pink-700 to-purple-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">LimitBreak</span>
+        maybe that's all for the mail, see you for the next leaks!</p>`,
       sender: `<i class="ri-verified-badge-fill"></i> <span class="text-red-900">@KuyFai</span>`
     }
   };
