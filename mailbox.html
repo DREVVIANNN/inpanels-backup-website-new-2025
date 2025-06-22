@@ -17,7 +17,15 @@
 </head>
 <body class="overflow-x-hidden">   
 
-  
+  <div id="loader" class="fixed inset-0 z-[9999] bg-gray-900 flex items-center justify-center">
+    <div class="bg-gray-900 rounded-xl shadow-2xl p-6 w-72 flex flex-col items-center justify-center">
+      <p class="text-white font-semibold text-sm mb-4">Loading your experience...</p>
+      <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
+        <div class="h-full bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 animate-loading-bar rounded-full"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Random Word Background Container -->
   <div id="bg-word-layer" translate="no" aria-hidden="true" lang="zxx" class="notranslate absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
 
@@ -29,6 +37,14 @@
     <!-- Message List -->
     <div class="space-y-3">
 
+      <div onclick="openPopup(4)" class="cursor-pointer border border-gray-700 rounded-lg p-4 hover:bg-gray-700 transition">
+        <div class="flex justify-between items-center">
+          <h2 class="font-semibold text-lg">New Update V4.1 What's New?</h2>
+          <span class="text-xs text-gray-400">~DV Arts</span>
+        </div>
+        <p class="text-gray-400 text-sm mt-1">Click to view</p>
+      </div>
+
       <div onclick="openPopup(3)" class="cursor-pointer border border-gray-700 rounded-lg p-4 hover:bg-gray-700 transition">
         <div class="flex justify-between items-center">
           <h2 class="font-semibold text-lg">Introducing Web V4.1</h2>
@@ -39,7 +55,7 @@
 
       <div onclick="openPopup(1)" class="cursor-pointer border border-gray-700 rounded-lg p-4 hover:bg-gray-700 transition">
         <div class="flex justify-between items-center">
-          <h2 class="font-semibold text-lg">📢 New Update Released</h2>
+          <h2 class="font-semibold text-lg">New Update Released</h2>
           <span class="text-xs text-gray-400">~DV Arts</span>
         </div>
         <p class="text-gray-400 text-sm mt-1">Click to view</p>
@@ -80,11 +96,40 @@
     }
   </style>
 
+<style>
+  @keyframes loadingBar {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(10%); }
+    100% { transform: translateX(100%); }
+  }
+
+  .animate-loading-bar {
+    width: 150%;
+    animation: loadingBar 2s ease-in-out infinite;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    loader.classList.add("fade-out");
+
+    // Optional: remove from DOM after animation
+    setTimeout(() => loader.remove(), 1000);
+  });
+</script>
+
   <!-- Toggle Script -->
   <script>
  const messages = {
     1: {
-      title: "📢 New Update Released",
+      title: "New Update Released V4.0.8",
       body: `
         <p>We’ve added <strong>new website UI</strong> and fixed several bugs!</p>
         <p>Explore the article and try the <em>new clean ui</em> today.</p>
@@ -116,6 +161,14 @@
         also added a new secret button that use to get a new title like this: <span class="bg-gradient-to-l select-none from-pink-700 to-purple-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">LimitBreak</span>
         maybe that's all for the mail, see you for the next leaks!</p>`,
       sender: `<i class="ri-verified-badge-fill"></i> <span class="text-red-900">@KuyFai</span>`
+    },
+    4: {
+      title: "New Update V4.1 What's New?",
+      body: `
+        Welcome to the new update V4.1! let's check what's new on this update, also we're fixing several bugs and new our streamer blog update!
+        check all the update information here: <a href="halaman-article-delapan-belas" class="text-blue-400 underline">click here</a>  
+      `,
+      sender: `<i class="ri-hammer-fill text-blue-400"></i> <i class="ri-verified-badge-fill"></i> DV Arts.`
     }
   };
 

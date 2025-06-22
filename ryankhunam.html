@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html class="bg-gradient-to-br from-[#1c1f35] via-[#de7c7c] to-[#f9d6cf] text-gray-300 scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Suaminya Changli | InPanels Development</title>
+    <title>Suaminya Changli</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     <link rel="shortcut icon" href="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn.jpg" type="image/x-icon">
@@ -12,116 +12,342 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8114226943532527"
      crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+     <script async src="https://www.tiktok.com/embed.js"></script>
 </head>
-<body class="bg-gray-900 text-gray-800">
-    
+<body class="overflow-x-hidden">   
+
   <div id="loader" class="fixed inset-0 z-[9999] bg-gray-900 flex items-center justify-center">
     <div class="bg-gray-900 rounded-xl shadow-2xl p-6 w-72 flex flex-col items-center justify-center">
-      <p class="text-white font-semibold text-sm mb-4">Maintenance for a while...</p>
+      <p class="text-white font-semibold text-sm mb-4">Loading your experience...</p>
       <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
         <div class="h-full bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 animate-loading-bar rounded-full"></div>
       </div>
     </div>
   </div>
-    
-      <!-- Navigation -->
-  <header class="sticky top-0 z-50 bg-[#0e1525] text-white shadow border-b border-gray-700">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <h1 class="text-lg font-semibold">InPanels.Dev</h1>
-    </div>
-  </header>
 
-  <!-- Article Header -->
-  <section class="max-w-7xl mx-auto px-4 z-1 py-16 animate-fade-in-left">
-    <p class="text-sm text-gray-400">MAY 28, 2025</p>
-    <div class="absolute z-0 right-0 top-0 sm-h[400px]">
-        <img src="assets/img/c6ebaed7-be8b-4aec-95bc-8eefe4b6d75c-removebg-preview.png" alt="Hero" class="w-[195px] md:w-[300px] opacity-40" />
+
+  <style>
+    @keyframes loadingBar {
+      0% { transform: translateX(-100%); }
+      50% { transform: translateX(10%); }
+      100% { transform: translateX(100%); }
+    }
+  
+    .animate-loading-bar {
+      width: 150%;
+      animation: loadingBar 2s ease-in-out infinite;
+    }
+  
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.6s ease-out;
+      pointer-events: none;
+    }
+  </style>
+  
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      loader.classList.add("fade-out");
+  
+      // Optional: remove from DOM after animation
+      setTimeout(() => loader.remove(), 1000);
+    });
+  </script>
+
+  <!-- Random Word Background Container -->
+  <div id="bg-word-layer" translate="no" aria-hidden="true" lang="zxx" class="notranslate absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
+  
+  <!-- User Profile Section -->
+  <section class="relative max-w-6xl mx-auto mt-12 px-6">
+    <a href="404">
+    <div class="flex items-center space-x-4 bg-gray-900 border border-gray-300 w-max rounded-lg px-2 py-1">
+      <!-- Profile Avatar -->
+      <div class="relative w-14 h-14 rounded-full p-1 bg-gradient-to-r from-red-700 to-red-900 animate-border-spin shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out">
+          <div class="w-full h-full bg-[#1e293b] rounded-full flex items-center justify-center overflow-hidden">
+          <img src="assets/img/993ce700f85df86a919c7a102bb39e04~tplv-tiktokx-cropcenter_1080_1080.jpg" alt="Profile" class="rounded-full w-full h-full object-cover">
+          </div>
       </div>
-    <h1 class="text-4xl md:text-5xl text-gray-300 font-bold tracking-tight mt-2">Tentang - Suaminya Changli (@ryankhunam)</h1>
-
-    <div class="flex items-center space-x-4 mt-6">
-        <div class="relative w-14 h-14 rounded-full p-1 bg-gradient-to-r from-red-900 to-red-700 animate-border-spin shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out">
-            <div class="w-full h-full bg-[#1e293b] rounded-full flex items-center justify-center overflow-hidden">
-              <img src="assets/img/993ce700f85df86a919c7a102bb39e04~tplv-tiktokx-cropcenter_1080_1080.jpg" alt="Profile" class="rounded-full w-full h-full object-cover">
-            </div>
-          </div>          
+  
+      <!-- Profile Info -->
       <div>
-        <div class="group select-none">
+          <div class="group relative select-none">
           <div class="flex items-center gap-2">
-            <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center justify-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
+              <span class="bg-gradient-to-l from-red-700 to-red-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">RY</span>
+              <p class="font-medium text-blue-400"><i class="ri-verified-badge-fill"></i> Suaminya Changli</p>
+          </div>
+          <p class="text-gray-400 text-sm">@ryankhunam<i class="ri-star-fill text-yellow-500"></i></p>
+          
+          <!-- Hover Tooltip -->
+          <div class="absolute ml-16 -translate-x-1/2 mt-2 w-max px-3 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+            Ryankhunam Official Account  <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
               RY
             </span>
-            <p class="font-medium text-blue-400"><i class="ri-verified-badge-fill"></i> Suaminya Changli</p>
           </div>
-            <p class="text-gray-400 text-sm">@ryankhunam <i class="ri-star-fill text-yellow-500"></i></p>
-            <div class="absolute ml-16 -translate-x-1/2 mt-2 w-max px-3 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                Ryankhunam Official Account  <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-                  RY
-                </span>
-            </div>
-        </div>
+          </div>
       </div>
-    </div>
-
-    <!-- Article Content -->
-    <article class="prose prose-invert max-w-none mt-3 text-gray-200">
-        <p>
-            <li class="list-disc font-bold text-xl">Siapa itu Ryankhunam atau Suaminya Changli?</li> <br>
-            Ryan Khunam, dikenal luas di TikTok sebagai @ryankhunam, adalah seorang kreator konten yang tengah naik daun di kalangan penggemar game Wuthering Waves. Julukan “Suaminya Changli” yang melekat padanya bukan sekadar nama panggilan iseng, tapi menjadi identitas khas yang menciptakan kedekatan emosional dengan para penonton, terutama yang juga menyukai karakter Changli dalam game tersebut.
-            Meskipun tidak banyak informasi pribadi tersedia secara publik, Ryan menonjol bukan dari latar belakang, tapi dari karismanya saat bermain game, selera humor, dan kemampuan membangun komunitas.
-        </p> <br>
-        <p>
-            <li class="font-bold text-xl">Wuwa Content Creator</li>
-            Ryan banyak dikenal karena konten bertemakan Wuthering Waves, sebuah game action-RPG dengan gaya anime yang sangat digandrungi saat ini. Konten yang ia bagikan mencakup: <br> <br>
-            <li class="list-disc">Cuplikan gameplay yang penuh aksi</li>
-            <li class="list-disc">Momen kocak atau “epic fail” saat bermain</li>
-            <li class="list-disc">Ulasan karakter, terutama Changli</li>
-            <li class="list-disc">Reaksi terhadap skill karakter dalam game</li>
-            <li class="list-disc">Tips gameplay ringan dengan gaya yang santai</li>
-            <br>
-            Salah satu kekuatan Ryan adalah membawa momen-momen game ke dalam format singkat TikTok yang tetap menarik. Bahkan saat gameplay-nya terlihat biasa, ia menyelipkan ekspresi atau narasi lucu, membuat penonton tertarik dan merasa terhibur.
-        </p> <br>
-        <p>
-            @ryankhunam bukan sekadar kreator TikTok biasa. Dengan gayanya yang lucu, branding yang kuat (“Suaminya Changli”), serta kedekatannya dengan komunitas, ia telah membangun sesuatu yang lebih dari sekadar konten—ia menciptakan koneksi dan fandom kecil yang penuh warna.
-            Jika Anda adalah penggemar Wuthering Waves, konten anime, atau sekadar ingin hiburan ringan seputar dunia game, Ryan Khunam adalah salah satu kreator yang wajib di-follow.
-        </p> <br>
-        <p>
-          <strong><li class="list-disc">Suka Roasting (Gimmick)</li></strong> <br>
-          @ryankhunam merupakan salah satu kreator TikTok yang dikenal dengan gaya kontennya yang unik dan berkarakter. Ia sering membuat video dengan konsep roasting atau mengkritik akun-akun lain secara satir dan penuh gimmick, namun tetap dalam batas hiburan yang sehat. Kritik yang disampaikan biasanya bersifat lucu dan mengandung sindiran halus yang mengundang tawa, tanpa bermaksud menjatuhkan pihak lain.
-        </p> <br>
-        <p>
-          Ciri khasnya adalah menyampaikan kritik dengan ekspresi serius, intonasi tegas, dan gaya komunikasi yang menarik perhatian. Meskipun kontennya terlihat “menyenggol”, banyak penonton menyadari bahwa hal itu murni untuk hiburan dan tidak mengandung unsur kebencian.
-        </p> <br>
-        <p>
-          <strong><li class="list-disc">Sales Changli</li></strong> <br>
-          @ryankhunam adalah kreator TikTok yang dikenal sebagai “sales Changli”  karena ia berhasil menunjukkan potensi maksimal Changli di Wuthering Waves. Lewat konten-konten seputar changlinya, ia membuktikan bahwa Changli bukan "no damage", tapi karakter DPS yang mematikan di tangan yang tepat. <br> <br>
-          Dan juga Julukan Sales Changli dengan kata lain adalah tentang bagaimana Changli menjual hatinya secara gratis kepada ryankhunam. <br>
-          <blockquote class="mt-5 text-gray-300">
-            Ryankhunam bukan hanya kreator. Dia adalah
-            Satu-satunya pria yang tidak perlu mengejar cinta karakter game,
-            karena karakter itu sendiri yang datang untuk menyerahkan hatinya.
-          </blockquote>
-        </p> <br>
-        <p>
-          <strong><li class="list-disc">Terkadang Suka JJ</li></strong> <br>
-          Di antara roasting dan jualan, @ryankhunam juga aktif sebagai “Kang JJ”. Ia kerap muncul dalam konten jedag-jedug dengan musik remix dan efek transisi dramatis — lengkap dengan gaya edit yang bikin video makin ‘pecah’ di FYP. Perpaduan gaya roasting yang serius tapi lucu, dengan jedag-jedug yang hiperaktif, jadi kombinasi unik yang bikin penonton betah di akunnya.
-        </p>
-    </article>
-
-    <div class="mt-10">
-        <a class="text-blue-400 underline hover:text-blue-500 transition duration-500" href="halaman-article.html"><i class="ri-arrow-left-line"></i> Back To Our Update</a>
-    </div>
+      </div>
+    </a>
   </section>
 
-  <!-- Footer -->
-  <footer class=" max-w-7xl mx-auto text-gray-500 py-8 border-t border-gray-700">
-    &copy; 2025 InPanels Development. All rights reserved
-  </footer>
-  
-    
 
-      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+ <section class="relative">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between py-12 px-6">
+  <div class="md:w-1/2 space-y-6">
+    <h1 class="text-4xl font-sans font-extrabold tracking-widest leading-tight">
+      <span class="text-gray-300">Who</span><br><span class="text-gray-300">Is</span><br><span class="text-gray-300">Ryankhunam</span>
+      <aj></aj>
+    </h1>
+    <div class="bg-gray-900 border border-gray-300 text-white px-4 py-3 rounded-xl max-w-sm">
+      <div class="text-sm uppercase tracking-widest">Support Ryankhunam 🤩</div>
+      <div class="flex justify-between items-center mt-1">
+        <span class="text-xs">Traktir aku (@ryankhunam) <br> dengan saweria 😋</span>
+        <a href="https://saweria.co/ryankhunam"><button class="text-xs border px-3 py-1 rounded-full border-white hover:bg-white hover:text-black transition">Saweria →</button></a>
+      </div>
+    </div>
+    <p class="text-sm font-medium max-w-md bg-[#fef0e6] text-gray-800 shadow-xl p-4 rounded-xl border-l-4 border-black">
+      "Hai, namaku ryankhunam, aku adalah seorang player game wuthering waves yang sering live jika ada waktu luang😉"
+    </p> <br>
+    <a href="https://chat.whatsapp.com/LTOfV9tbZSeEdfN9As8NMH">
+      <button class="bg-gray-900 text-white rounded-full px-6 py-2 hover:bg-white hover:text-black border border-gray-600 transition">
+          <i class="ri-whatsapp-fill mr-3 text-green-400"></i> Group WhatsApp
+        </button>
+    </a>
+
+    <div class="flex max-w-6xl mx-auto items-center gap-2">
+      <i id="heartIcon" class="ri-heart-line text-2xl text-gray-400 cursor-pointer transition-all duration-300"></i>
+      <span id="likeCount" class="text-gray-300 text-sm">0</span>
+    </div>
+  </div>
+  
+
+  <div class="relative overflow-x-hidden w-full">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-16">
+    <div class="md:w-1/2 mt-10 md:mt-0 relative overflow-hidden h-full w-full">
+    <div class="absolute inset-0 -z-10 space-y-4 opacity-20 rotate-6">
+      <div class="bg-black h-4 w-3/4"></div>
+      <div class="bg-black h-4 w-2/3"></div>
+      <div class="bg-black h-4 w-4/5"></div>
+      <div class="bg-black h-4 w-3/5"></div>
+    </div>
+    <img src="assets/img/c6ebaed7-be8b-4aec-95bc-8eefe4b6d75c-removebg-preview.png" alt="Changli" class="w-full max-w-sm mx-auto drop-shadow-2xl">
+  </div>
+</div>
+  </div>
+</div>
+ </section>
+
+<!-- About Me Section -->
+<section class="relative max-w-6xl mx-auto py-3 px-6">
+  <div class="max-w-6xl mx-auto mb-8">
+    <h2 class="text-4xl font-extrabold">About Me</h2>
+  </div>
+
+  <div class="flex flex-col md:flex-row justify-between gap-6">
+    <!-- Card 1 -->
+    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-300 w-full md:w-1/3 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-400">
+      <p class="text-gray-400 text-sm">
+        Ryan Khunam, dikenal luas di TikTok sebagai @ryankhunam, adalah seorang kreator konten yang tengah naik daun di kalangan penggemar game Wuthering Waves. Ryankhunam juga menyajikan konten wuwa berupa tantangan dengan beberapa karakter yang dimilikinya.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-300 w-full md:w-1/3 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-400">
+      <p class="text-gray-400 text-sm">
+        Julukan “Suaminya Changli” yang melekat padanya bukan sekadar nama panggilan iseng, tapi menjadi identitas khas yang menciptakan kedekatan emosional dengan para penonton, terutama yang juga menyukai karakter Changli dalam game tersebut.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-300 w-full md:w-1/3 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-400">
+      <p class="text-gray-400 text-sm">
+        Ciri khasnya adalah menyampaikan kritik dengan ekspresi serius, intonasi tegas, dan gaya komunikasi yang menarik perhatian. Meskipun kontennya terlihat “menyenggol”, banyak penonton menyadari bahwa hal itu murni untuk hiburan dan tidak mengandung unsur kebencian.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Video Thumbnails -->
+<div class="max-w-6xl mx-auto py-12 px-6">
+  <h3 class="text-xl md:text-2xl font-semibold mb-6"><i class="ri-video-on-fill text-blue-400"></i> Pinned Videos</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+
+    <a href="https://www.tiktok.com/@ryankhunam/photo/7515207860876283142?is_from_webapp=1&sender_device=pc">
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/wm/2024/07/wuthering-waves-changli-intimidating-face-closeup.jpg" alt="Video 1" class="w-full object-cover">
+          <div class="absolute bottom-0 right-0 rounded-xl bg-gray-900 bg-opacity-80 px-2 py-2">
+            <p class="text-white text-[15px] md:text-[17px] font-semibold tracking-wide">Ryankhunam POST <span class="text-yellow-400">#1</span></p>
+          </div>
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="ri-play-circle-fill text-white text-5xl"></i>
+          </div>
+        </div>
+    </a>
+
+    <a href="https://www.tiktok.com/@ryankhunam/video/7478618882660470071?is_from_webapp=1&sender_device=pc">
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/wm/2024/07/wuthering-waves-changli-intimidating-face-closeup.jpg" alt="Video 2" class="w-full object-cover">
+          <div class="absolute bottom-0 right-0 rounded-xl bg-gray-900 bg-opacity-80 px-2 py-2">
+            <p class="text-white text-[15px] md:text-[17px] font-semibold tracking-wide">Ryankhunam POST <span class="text-yellow-400">#2</span></p>
+          </div>
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="ri-play-circle-fill text-white text-5xl"></i>
+          </div>
+        </div>
+    </a>
+
+    <a href="https://www.tiktok.com/@ryankhunam/video/7422996937064107270?is_from_webapp=1&sender_device=pc">
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/wm/2024/07/wuthering-waves-changli-intimidating-face-closeup.jpg" alt="Video 3" class="w-full object-cover">
+          <div class="absolute bottom-0 right-0 rounded-xl bg-gray-900 bg-opacity-80 px-2 py-2">
+            <p class="text-white text-[15px] md:text-[17px] font-semibold tracking-wide">Ryankhunam POST <span class="text-yellow-400">#3</span></p>
+          </div>
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="ri-play-circle-fill text-white text-5xl"></i>
+          </div>
+        </div>
+    </a>
+  </div>
+</div>
+
+<footer class="bg-[#0f172a] text-white py-10 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Brand/Logo -->
+    <div>
+      <h2 class="text-2xl font-bold text-gradient bg-gradient-to-r from-red-700 to-red-900 bg-clip-text text-transparent">Suaminya Changli</h2>
+      <p class="text-sm text-gray-400 mt-2">Powered by InPanels Development.</p>
+      <p class="text-xs text-gray-600 mt-1">&copy; 2025 DV Arts. All rights reserved.</p>
+      <p class="text-xs text-gray-600 mt-1">&copy; 2025 RemixIcon. All rights reserved.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3">More</h3>
+      <ul class="space-y-2 text-sm text-gray-400">
+        <li><a href="drevviann" class="hover:text-white transition">DREVVIANN</a></li>
+        <li><a href="masemasch" class="hover:text-white transition">Masemas Ch</a></li>
+        <li><a href="union" class="hover:text-white transition">Union</a></li>
+      </ul>
+    </div>
+
+    <!-- Socials -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3">Connect</h3>
+      <div class="flex space-x-4 text-xl">
+        <a href="https://tiktok.com/@ryankhunam" target="_blank" class="hover:text-pink-400 transition"><i class="ri-tiktok-fill"></i></a>
+        <a href="https://chat.whatsapp.com/LTOfV9tbZSeEdfN9As8NMH" target="_blank" class="hover:text-green-400 transition"><i class="ri-whatsapp-fill"></i></a>
+        <a href="https://discord.gg/yf4en9S2fT" target="_blank" class="hover:text-blue-400 transition"><i class="ri-discord-fill"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <style>
+    @keyframes loadingBar {
+      0% { transform: translateX(-100%); }
+      50% { transform: translateX(10%); }
+      100% { transform: translateX(100%); }
+    }
+  
+    .animate-loading-bar {
+      width: 150%;
+      animation: loadingBar 2s ease-in-out infinite;
+    }
+  
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.6s ease-out;
+      pointer-events: none;
+    }
+  </style>
+
+
+<script>
+  const isMobile = window.innerWidth < 40; // Tailwind's "sm" breakpoint
+  const wordCount = isMobile ? 10 : 40; // fewer on mobile
+  const words = ["は", "が", "に", "で", "も"];
+
+  const bgLayer = document.getElementById("bg-word-layer");
+
+  for (let i = 0; i < wordCount; i++) {
+    const span = document.createElement("span");
+    span.innerText = words[Math.floor(Math.random() * words.length)];
+    span.className = "absolute text-black/10 font-extrabold whitespace-nowrap select-none";
+    span.style.fontSize = `${Math.floor(Math.random() * 30) + 16}px`;
+    span.style.top = `${Math.random() * 100}vh`;
+    span.style.left = `${Math.random() * 100}vw`;
+    span.style.transform = `rotate(${Math.random() * 30 - 15}deg)`;
+    span.style.animation = `floatWord 8s ease-in-out infinite alternate ${Math.random() * 3}s`;
+    bgLayer.appendChild(span);
+  }
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyBY54WfX5xhYzlmOjDPDWhDn1vl3FH3u50",
+  authDomain: "inpanels-game.firebaseapp.com",
+  projectId: "inpanels-game",
+  storageBucket: "inpanels-game.firebasestorage.app",
+  messagingSenderId: "650159717173",
+  appId: "1:650159717173:web:08c41c28aca9a2e69c6a7c"
+};
+
+
+firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+  const postId = "ryankhunamLikes";
+
+  const localStorageKey = `liked_${postId}`;
+  let liked = false;
+  let likeCount = 0;
+
+  function formatLikes(number) {
+    if (number >= 1_000_000) return (number / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
+    if (number >= 1_000) return (number / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+    return number.toString();
+  }
+
+  async function loadLikeState() {
+    const doc = await db.collection("likes").doc(postId).get();
+    if (doc.exists) {
+      likeCount = doc.data().count || 0;
+      document.getElementById("likeCount").textContent = formatLikes(likeCount);
+    }
+
+    if (localStorage.getItem(localStorageKey) === "true") {
+      liked = true;
+      updateHeartUI();
+    }
+  }
+
+  async function toggleLike() {
+    if (liked) return;
+
+    liked = true;
+    likeCount++;
+    localStorage.setItem(localStorageKey, "true");
+    document.getElementById("likeCount").textContent = formatLikes(likeCount);
+    updateHeartUI();
+
+    await db.collection("likes").doc(postId).set({ count: likeCount });
+  }
+
+  function updateHeartUI() {
+    const heart = document.getElementById("heartIcon");
+    heart.className = liked
+      ? "ri-heart-fill text-red-500 text-2xl cursor-pointer transition-all duration-300"
+      : "ri-heart-line text-gray-400 text-2xl cursor-pointer transition-all duration-300";
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    loadLikeState();
+    document.getElementById("heartIcon").addEventListener("click", toggleLike);
+  });
+</script>
 
     <script src="example.js"></script>
 </body>

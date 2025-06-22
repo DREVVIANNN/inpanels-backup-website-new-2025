@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-gray-900 text-gray-300 scroll-smooth" lang="en">
+<html translate="no" class="bg-gray-900 text-gray-300 scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +16,9 @@
 </head>
 <body class="overflow-x-hidden">   
 
-<!-- Modern Loader -->
 <div id="loader" class="fixed inset-0 z-[9999] bg-gray-900 flex items-center justify-center">
   <div class="bg-gray-900 rounded-xl shadow-2xl p-6 w-72 flex flex-col items-center justify-center">
-    <p class="text-white font-semibold text-sm mb-4">Maintenance for a while...</p>
+    <p class="text-white font-semibold text-sm mb-4">Loading your experience...</p>
     <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
       <div class="h-full bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 animate-loading-bar rounded-full"></div>
     </div>
@@ -199,15 +198,15 @@
     }
   </style>
   
-<!--  <script>
+  <script>
     window.addEventListener("load", () => {
       const loader = document.getElementById("loader");
       loader.classList.add("fade-out");
   
       // Optional: remove from DOM after animation
-      setTimeout(() => loader.remove(), 800);
+      setTimeout(() => loader.remove(), 1000);
     });
-  </script> -->
+  </script>
   
 
 <script>

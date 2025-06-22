@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-[#fef0e6] text-black scroll-smooth" lang="en">
+<html translate="no" class="bg-[#fef0e6] text-black scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,12 +18,42 @@
 
   <div id="loader" class="fixed inset-0 z-[9999] bg-gray-900 flex items-center justify-center">
     <div class="bg-gray-900 rounded-xl shadow-2xl p-6 w-72 flex flex-col items-center justify-center">
-      <p class="text-white font-semibold text-sm mb-4">Maintenance for a while...</p>
+      <p class="text-white font-semibold text-sm mb-4">Loading your experience...</p>
       <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
         <div class="h-full bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 animate-loading-bar rounded-full"></div>
       </div>
     </div>
   </div>
+
+
+  <style>
+    @keyframes loadingBar {
+      0% { transform: translateX(-100%); }
+      50% { transform: translateX(10%); }
+      100% { transform: translateX(100%); }
+    }
+  
+    .animate-loading-bar {
+      width: 150%;
+      animation: loadingBar 2s ease-in-out infinite;
+    }
+  
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.6s ease-out;
+      pointer-events: none;
+    }
+  </style>
+  
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      loader.classList.add("fade-out");
+  
+      // Optional: remove from DOM after animation
+      setTimeout(() => loader.remove(), 1000);
+    });
+  </script>
     
   <!-- Random Word Background Container -->
   <div id="bg-word-layer" translate="no" aria-hidden="true" lang="zxx" class="notranslate absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
@@ -91,10 +121,8 @@
   </div>
   
 
-  <!-- Right Anime Image -->
   <div class="relative overflow-x-hidden w-full">
       <div class="flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-16">
-    <!-- Background lines -->
     <div class="md:w-1/2 mt-10 md:mt-0 relative overflow-hidden h-full w-full">
     <div class="absolute inset-0 -z-10 space-y-4 opacity-20 rotate-6">
       <div class="bg-black h-4 w-3/4"></div>
@@ -102,7 +130,7 @@
       <div class="bg-black h-4 w-4/5"></div>
       <div class="bg-black h-4 w-3/5"></div>
     </div>
-    <img src="https://github.com/DREVVIANNN/PP-zani-baru-wkwkwk/blob/main/Screenshot_20250617-162732-removebg-preview.png?raw=true" alt="Anime Character" class="w-full max-w-sm mx-auto drop-shadow-2xl">
+    <img src="https://github.com/DREVVIANNN/PP-zani-baru-wkwkwk/blob/main/Screenshot_20250617-162732-removebg-preview.png?raw=true" alt="Mini Cartethiya" class="w-full max-w-sm mx-auto drop-shadow-2xl">
   </div>
 </div>
   </div>
