@@ -26,6 +26,11 @@
     </div>
   </div>
 
+  <div class="w-[200px] md:w-[200px] fixed p-2 bg-gray-900 z-50 border border-gray-800 rounded bottom-5 right-[-5px] fade-in">
+    <p class="text-blue-400">
+      <span class="text-gray-400">Music:</span> Heat Waves
+    </p>
+  </div>
 
   <style>
     @keyframes loadingBar {
@@ -214,8 +219,10 @@
     <div>
       <h2 class="text-2xl font-bold text-gradient bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent">Union</h2>
       <p class="text-sm text-gray-400 mt-2">Powered by InPanels Development.</p>
+      <p class="text-sm text-gray-400 mt-2">Music: Heat Waves - Glass Animals <i class="ri-verified-badge-fill"></i></p>
       <p class="text-xs text-gray-600 mt-1">&copy; 2025 DV Arts. All rights reserved.</p>
       <p class="text-xs text-gray-600 mt-1">&copy; 2025 RemixIcon. All rights reserved.</p>
+      <p class="text-xs text-gray-600 mt-1">&copy; 2025 Glass Animals. All rights reserved.</p>
     </div>
 
     <!-- Quick Links -->
@@ -239,6 +246,12 @@
   </div>
 </footer>
 
+<audio id="background-music" autoplay loop>
+  <source src="assets/audio/heatwaves.mp3" type="audio/mpeg">
+  <source src="assets/audio/heatwaves.ogg" type="audio/ogg">
+  <source src="https://www.inpanels.site/heatwaves.mp3" type="audio/mpeg">
+  </audio>
+
 <script>
  const isMobile = window.innerWidth < 40; // Tailwind's "sm" breakpoint
   const wordCount = isMobile ? 10 : 40; // fewer on mobile
@@ -257,6 +270,46 @@
     span.style.animation = `floatWord 8s ease-in-out infinite alternate ${Math.random() * 3}s`;
     bgLayer.appendChild(span);
   }
+
+     // Get the audio element
+const audioElement = document.getElementById("background-music");
+     
+     // Function to check if audio is playing
+     function isPlaying(audio) {
+         return !audio.paused && !audio.ended && audio.readyState > 2;
+     }
+     
+     // Event listener to ensure autoplay works after user interaction (for stricter browsers)
+     document.addEventListener("click", () => {
+         if (!isPlaying(audioElement)) {
+             audioElement.play().catch(error => {
+                 console.error("Autoplay failed. User interaction is required:", error);
+             });
+         }
+     });
+     
+     // Add fallback logic for loading audio sources
+     audioElement.addEventListener("error", () => {
+         console.error("Audio failed to load. Check file paths or URLs.");
+         alert("Audio failed to load. Please check your connection or file availability.");
+     });
+     
+     // Log when audio starts playing
+     audioElement.addEventListener("play", () => {
+         console.log("Audio is playing.");
+     });
+     
+     // Log when audio is paused
+     audioElement.addEventListener("pause", () => {
+         console.log("Audio is paused.");
+     });
+     
+     // Attempt to play audio on page load
+     window.addEventListener("load", () => {
+         audioElement.play().catch(error => {
+             console.warn("Autoplay might be blocked by the browser:", error);
+         });
+     });
 </script>
 
 <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
