@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Union | InPanels Development</title>
+    <title>Union</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     <link rel="shortcut icon" href="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn.jpg" type="image/x-icon">
@@ -15,6 +15,15 @@
      <script async src="https://www.tiktok.com/embed.js"></script>
 </head>
 <body class="overflow-x-hidden">    
+
+  <div id="loader" class="fixed inset-0 z-[9999] bg-gray-900 flex items-center justify-center">
+    <div class="bg-gray-900 rounded-xl shadow-2xl p-6 w-72 flex flex-col items-center justify-center">
+      <p class="text-white font-semibold text-sm mb-4">Maintenance for a while...</p>
+      <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
+        <div class="h-full bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 animate-loading-bar rounded-full"></div>
+      </div>
+    </div>
+  </div>
     
   <!-- Random Word Background Container -->
   <div id="bg-word-layer" translate="no" aria-hidden="true" lang="zxx" class="notranslate absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
@@ -22,7 +31,7 @@
 
   <!-- User Profile Section -->
   <section class="relative max-w-6xl mx-auto mt-12 px-6">
-    <div class="flex items-center space-x-4 bg-gray-900 border border-gray-900 w-max rounded-lg px-2 py-1">
+    <div class="flex items-center space-x-4 w-max rounded-lg px-2 py-1">
       <!-- Profile Avatar -->
       <div class="relative w-14 h-14 rounded-full p-1 bg-gradient-to-r from-yellow-400 to-yellow-600 animate-border-spin shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out">
           <div class="w-full h-full bg-[#1e293b] rounded-full flex items-center justify-center overflow-hidden">
@@ -74,7 +83,13 @@
           <i class="ri-discord-fill mr-3 text-blue-400"></i> Join Discord
         </button>
     </a>
+
+    <div class="flex max-w-6xl mx-auto items-center gap-2">
+      <i id="heartIcon" class="ri-heart-line text-2xl text-gray-400 cursor-pointer transition-all duration-300"></i>
+      <span id="likeCount" class="text-gray-800 text-sm">0</span>
+    </div>
   </div>
+  
 
   <!-- Right Anime Image -->
   <div class="relative overflow-x-hidden w-full">
@@ -198,14 +213,14 @@
 <script>
  const isMobile = window.innerWidth < 40; // Tailwind's "sm" breakpoint
   const wordCount = isMobile ? 10 : 40; // fewer on mobile
-  const words = ["Union", "Anomali", "Streamer", "Yapping", "Suami Cartethiya"];
+  const words = ["は", "が", "に", "で", "も"];
 
   const bgLayer = document.getElementById("bg-word-layer");
 
   for (let i = 0; i < wordCount; i++) {
     const span = document.createElement("span");
     span.innerText = words[Math.floor(Math.random() * words.length)];
-    span.className = "absolute text-black/5 font-extrabold whitespace-nowrap select-none";
+    span.className = "absolute text-black/10 font-extrabold whitespace-nowrap select-none";
     span.style.fontSize = `${Math.floor(Math.random() * 30) + 16}px`;
     span.style.top = `${Math.random() * 100}vh`;
     span.style.left = `${Math.random() * 100}vw`;
@@ -215,10 +230,72 @@
   }
 </script>
 
-    
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
 
-      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBY54WfX5xhYzlmOjDPDWhDn1vl3FH3u50",
+    authDomain: "inpanels-game.firebaseapp.com",
+    projectId: "inpanels-game",
+    storageBucket: "inpanels-game.firebasestorage.app",
+    messagingSenderId: "650159717173",
+    appId: "1:650159717173:web:08c41c28aca9a2e69c6a7c"
+  };
+  
+  
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+const postId = "unionLikes";
+
+const localStorageKey = `liked_${postId}`;
+let liked = false;
+let likeCount = 0;
+
+function formatLikes(number) {
+  if (number >= 1_000_000) return (number / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
+  if (number >= 1_000) return (number / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+  return number.toString();
+}
+
+async function loadLikeState() {
+  const doc = await db.collection("likes").doc(postId).get();
+  if (doc.exists) {
+    likeCount = doc.data().count || 0;
+    document.getElementById("likeCount").textContent = formatLikes(likeCount);
+  }
+
+  if (localStorage.getItem(localStorageKey) === "true") {
+    liked = true;
+    updateHeartUI();
+  }
+}
+
+async function toggleLike() {
+  if (liked) return;
+
+  liked = true;
+  likeCount++;
+  localStorage.setItem(localStorageKey, "true");
+  document.getElementById("likeCount").textContent = formatLikes(likeCount);
+  updateHeartUI();
+
+  await db.collection("likes").doc(postId).set({ count: likeCount });
+}
+
+function updateHeartUI() {
+  const heart = document.getElementById("heartIcon");
+  heart.className = liked
+    ? "ri-heart-fill text-red-500 text-2xl cursor-pointer transition-all duration-300"
+    : "ri-heart-line text-gray-400 text-2xl cursor-pointer transition-all duration-300";
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  loadLikeState();
+  document.getElementById("heartIcon").addEventListener("click", toggleLike);
+});
+  </script>
 
     <script src="example.js"></script>
 </body>

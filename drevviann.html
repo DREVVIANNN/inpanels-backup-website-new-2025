@@ -6,7 +6,7 @@
     <title>DV Arts.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
-    <link rel="shortcut icon" href="assets/img/Proyek Baru 161 [CC18F4F].png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/a82ghh8et7g2gdaf9990juekl20jeobn.jpg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8114226943532527"
@@ -16,11 +16,20 @@
 </head>
 <body class="overflow-x-hidden">   
 
-  
+<!-- Modern Loader -->
+<div id="loader" class="fixed inset-0 z-[9999] bg-gray-900 flex items-center justify-center">
+  <div class="bg-gray-900 rounded-xl shadow-2xl p-6 w-72 flex flex-col items-center justify-center">
+    <p class="text-white font-semibold text-sm mb-4">Maintenance for a while...</p>
+    <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
+      <div class="h-full bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 animate-loading-bar rounded-full"></div>
+    </div>
+  </div>
+</div>
+
+
   <!-- Random Word Background Container -->
   <div id="bg-word-layer" translate="no" aria-hidden="true" lang="zxx" class="notranslate absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
-
-
+  
   <!-- User Profile Section -->
   <section class="relative max-w-6xl mx-auto mt-12 px-6">
     <a href="drevviann-profile">
@@ -36,15 +45,15 @@
       <div>
           <div class="group relative select-none">
           <div class="flex items-center gap-2">
-              <span class="bg-gradient-to-l from-red-700 to-red-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">GM</span>
+            <span class="bg-gradient-to-l select-none from-pink-700 to-purple-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">LimitBreak</span>
               <p class="font-medium text-blue-400"><i class="ri-hammer-fill"></i> <i class="ri-verified-badge-fill text-red-500"></i> DV Arts.</p>
           </div>
           <p class="text-gray-400 text-sm">@drevviann <i class="ri-star-fill text-yellow-500"></i></p>
           
           <!-- Hover Tooltip -->
           <div class="absolute ml-16 -translate-x-1/2 mt-2 w-max px-3 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-              Grandmaster Account
-              <span class="bg-gradient-to-l from-red-700 to-red-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">GM</span>
+              LimitBreaker Account
+              <span class="bg-gradient-to-l select-none from-pink-700 to-purple-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">LimitBreak</span>
           </div>
           </div>
       </div>
@@ -77,44 +86,11 @@
         </button>
     </a>
 
-    
+    <div class="flex items-center gap-2">
+      <i id="heartIcon" class="ri-heart-line text-2xl text-gray-400 cursor-pointer transition-all duration-300"></i>
+      <span id="likeCount" class="text-white text-sm">0</span>
+    </div>
  </section>
-
-<!-- About Me Section -->
-<section class="relative max-w-6xl mx-auto py-12 px-6">
-  <div class="max-w-6xl mx-auto mb-12">
-    <h2 class="text-4xl font-extrabold mb-4">About Me</h2>
-    <p class="text-gray-300 text-lg">
-      Siapakah aku? (@drevviann), di baca! jangan di pelototin doang!
-    </p>
-  </div>
-
-  <div class="flex flex-col md:flex-row justify-between gap-6">
-    <!-- Card 1 -->
-    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-300 w-full md:w-1/3 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-400">
-      <h3 class="text-xl text-gray-300 font-bold mb-2">InPanels Founder</h3>
-      <p class="text-gray-400 text-sm">
-          di temukan oleh diriku sendiri di dalam benak pikiran yang dalam, dan campuran antara bisnis terdahulu dan jadilah nama yang di kenal, yaitu, InPanels.
-      </p>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-300 w-full md:w-1/3 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-400">
-      <h3 class="text-xl text-gray-300 font-bold mb-2">Programmer</h3>
-      <p class="text-gray-400 text-sm">
-        Programmer kecil yang ingin mengenal teknologi lebih jauh lagi, walau kapasitas otak tidak memenuhi kriteria.
-      </p>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-300 w-full md:w-1/3 transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-400">
-      <h3 class="text-xl text-gray-300 font-bold mb-2">Konten Kreator</h3>
-      <p class="text-gray-400 text-sm">
-          di saat waktu luang biasanya membuat anime manipulation dan mengupload nya di sosial media, khususnya tiktok.
-      </p>
-    </div>
-  </div>
-</section>
 
 <!-- Video Thumbnails -->
 <div class="max-w-6xl mx-auto py-12 px-6">
@@ -204,26 +180,35 @@
   <source src="https://www.inpanels.site/5030932a4ab437b285cde7513ffeb87d.mp3" type="audio/mpeg">
   </audio>
 
-<style>
-
-@keyframes slide-bounce {
-  0% {
-    left: -30%;
-    width: 30%;
-  }
-  50% {
-    left: 50%;
-    width: 50%;
-  }
-  100% {
-    left: 100%;
-    width: 30%;
-  }
-}
-.loading-line {
-  animation: slide-bounce 1.8s ease-in-out infinite;
-}
-</style>
+  <style>
+    @keyframes loadingBar {
+      0% { transform: translateX(-100%); }
+      50% { transform: translateX(10%); }
+      100% { transform: translateX(100%); }
+    }
+  
+    .animate-loading-bar {
+      width: 150%;
+      animation: loadingBar 2s ease-in-out infinite;
+    }
+  
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.6s ease-out;
+      pointer-events: none;
+    }
+  </style>
+  
+<!--  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      loader.classList.add("fade-out");
+  
+      // Optional: remove from DOM after animation
+      setTimeout(() => loader.remove(), 800);
+    });
+  </script> -->
+  
 
 <script>
   const isMobile = window.innerWidth < 40; // Tailwind's "sm" breakpoint
@@ -285,11 +270,72 @@ const audioElement = document.getElementById("background-music");
      });
 </script>
 
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
 
-    
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyBY54WfX5xhYzlmOjDPDWhDn1vl3FH3u50",
+  authDomain: "inpanels-game.firebaseapp.com",
+  projectId: "inpanels-game",
+  storageBucket: "inpanels-game.firebasestorage.app",
+  messagingSenderId: "650159717173",
+  appId: "1:650159717173:web:08c41c28aca9a2e69c6a7c"
+};
 
-      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+  const postId = "drevviannLikes";
+
+  const localStorageKey = `liked_${postId}`;
+  let liked = false;
+  let likeCount = 0;
+
+  function formatLikes(number) {
+    if (number >= 1_000_000) return (number / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
+    if (number >= 1_000) return (number / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+    return number.toString();
+  }
+
+  async function loadLikeState() {
+    const doc = await db.collection("likes").doc(postId).get();
+    if (doc.exists) {
+      likeCount = doc.data().count || 0;
+      document.getElementById("likeCount").textContent = formatLikes(likeCount);
+    }
+
+    if (localStorage.getItem(localStorageKey) === "true") {
+      liked = true;
+      updateHeartUI();
+    }
+  }
+
+  async function toggleLike() {
+    if (liked) return;
+
+    liked = true;
+    likeCount++;
+    localStorage.setItem(localStorageKey, "true");
+    document.getElementById("likeCount").textContent = formatLikes(likeCount);
+    updateHeartUI();
+
+    await db.collection("likes").doc(postId).set({ count: likeCount });
+  }
+
+  function updateHeartUI() {
+    const heart = document.getElementById("heartIcon");
+    heart.className = liked
+      ? "ri-heart-fill text-red-500 text-2xl cursor-pointer transition-all duration-300"
+      : "ri-heart-line text-gray-400 text-2xl cursor-pointer transition-all duration-300";
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    loadLikeState();
+    document.getElementById("heartIcon").addEventListener("click", toggleLike);
+  });
+</script>
 
     <script src="example.js"></script>
 </body>
