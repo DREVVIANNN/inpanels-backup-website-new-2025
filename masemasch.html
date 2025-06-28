@@ -17,21 +17,12 @@
 </head>
 <body class="overflow-x-hidden">   
 
-  <div id="loader" class="fixed inset-0 z-[9999] bg-gray-900 flex items-center justify-center">
-    <div class="bg-gray-900 rounded-xl shadow-2xl p-6 w-72 flex flex-col items-center justify-center">
-      <p class="text-white font-semibold text-sm mb-4">Loading your experience...</p>
-      <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-        <div class="h-full bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 animate-loading-bar rounded-full"></div>
-      </div>
-    </div>
-  </div>
 
   <!-- Random Word Background Container -->
   <div id="bg-word-layer" translate="no" aria-hidden="true" lang="zxx" class="notranslate absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
   
   <!-- User Profile Section -->
   <section class="relative max-w-6xl mx-auto mt-12 px-6">
-    <a href="404">
     <div class="flex items-center space-x-4 bg-gray-900 border border-gray-300 w-max rounded-lg px-2 py-1">
       <!-- Profile Avatar -->
       <div class="relative w-14 h-14 rounded-full p-1 bg-gradient-to-r from-red-700 to-red-900 animate-border-spin shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out">
@@ -40,25 +31,21 @@
           </div>
       </div>
   
-      <!-- Profile Info -->
       <div>
-          <div class="group relative select-none">
-          <div class="flex items-center gap-2">
-              <span class="bg-gradient-to-l from-red-700 to-red-900 text-white px-1.5 py-[1px] rounded text-[10px] font-bold">MCH</span>
-              <p class="font-medium text-blue-400"><i class="ri-verified-badge-fill"></i> Masemas Ch</p>
-          </div>
-          <p class="text-gray-400 text-sm">@masemas_ch<i class="ri-star-fill text-yellow-500"></i></p>
-          
-          <!-- Hover Tooltip -->
-          <div class="absolute ml-16 -translate-x-1/2 mt-2 w-max px-3 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-            Masemas Ch Official Account  <span class="bg-gradient-to-l from-red-700 to-red-900 text-center items-center text-white px-1.5 py-[1px] rounded text-[10px] font-bold">
-              MCH
-            </span>
-          </div>
-          </div>
-      </div>
-      </div>
-    </a>
+        <div class="group relative select-none">
+        <div class="flex items-center gap-2">
+            <p class="font-medium text-blue-400 flex"><img src="assets/img/verified.svg" alt="" class="w-[15px] mr-1 ml-1">Masemas Ch</p>
+        </div>
+        <p class="text-gray-400 text-sm">@masemas_ch</i></p>
+        
+        <!-- Hover Tooltip -->
+        <div class="absolute flex ml-16 -translate-x-1/2 mt-2 w-max px-3 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+            Official Account
+            <img src="assets/img/verified.svg" alt="" class="w-[15px] mr-1 ml-3">
+        </div>
+        </div>
+    </div>
+    </div>
   </section>
 
 
