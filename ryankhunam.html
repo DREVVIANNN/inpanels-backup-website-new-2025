@@ -17,16 +17,6 @@
 </head>
 <body class="overflow-x-hidden">   
 
-  <div id="loader" class="fixed inset-0 z-[9999] bg-gray-900 flex items-center justify-center">
-      
-    <div class="bg-gray-900 rounded-xl shadow-2xl p-6 w-72 flex flex-col items-center justify-center">
-      <p class="text-white font-semibold text-sm mb-4">maintenance for a while...</p>
-      <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-        <div class="h-full bg-gradient-to-r from-purple-600 via-red-900 to-red-900 animate-loading-bar rounded-full"></div>
-      </div>
-    </div>
-  </div>
-
   <div class="fixed top-0 right-0 z-40 w-32 md:w-64 pointer-events-none select-none">
     <img src="assets/img/ranting.png"
          alt="Autumn Seasons"
@@ -90,13 +80,26 @@
       <span class="text-gray-300">Who</span><br><span class="text-gray-300">Is</span><br><span class="text-gray-300">Ryankhunam</span>
       <aj></aj>
     </h1>
-    <div class="bg-gray-900 border border-gray-300 text-white px-4 py-3 rounded-xl max-w-sm">
+<div class="relative max-w-md mx-auto mt-6 overflow-hidden">
+  <!-- Anime Character -->
+  <img src="assets/img/c6ebaed7-be8b-4aec-95bc-8eefe4b6d75c-removebg-preview.png" alt="Changli"
+       class="absolute left-[-5px] top-[-10px] left-[-20px] w-[110px] sm:w-[120px] md:w-[130px] h-auto z-10 select-none pointer-events-none transition-all duration-300">
+
+  <!-- Main Container -->
+  <div class="flex items-center bg-gray-900 border border-gray-300 text-white px-4 py-3 rounded-xl shadow-lg relative z-0">
+    <div class="pl-20 sm:pl-24 md:pl-28">
       <div class="text-sm uppercase tracking-widest">Support Ryankhunam 🤩</div>
-      <div class="flex justify-between items-center mt-1">
-        <span class="text-xs">Traktir aku (@ryankhunam) <br> dengan saweria 😋</span>
-        <a href="https://saweria.co/ryankhunam"><button class="text-xs border px-3 py-1 rounded-full border-white hover:bg-white hover:text-black transition">Saweria →</button></a>
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mt-1 space-y-2 sm:space-y-0">
+        <span class="text-xs">Traktir aku (@ryankhunam) dengan <br class="sm:hidden"> Saweria 😋</span>
+        <a href="https://saweria.co/ryankhunam">
+          <button class="text-xs border px-3 py-1 rounded-full border-white hover:bg-white hover:text-black transition">
+            Saweria →
+          </button>
+        </a>
       </div>
     </div>
+  </div>
+</div>
     <p class="text-sm font-medium max-w-md bg-[#fef0e6] text-gray-800 shadow-xl p-4 rounded-xl border-l-4 border-black">
       "Hai, namaku ryankhunam, aku adalah seorang player game wuthering waves yang sering live jika ada waktu luang😉"
     </p> <br>
@@ -105,6 +108,10 @@
           <i class="ri-whatsapp-fill mr-3 text-green-400"></i> Group WhatsApp
         </button>
     </a>
+    
+        <div class="relative mt-6 rounded-xl overflow-hidden max-w-6xl mx-auto">
+  <img src="assets/img/ryankhunam-bg.png" alt="Changli" class="w-full object-cover rounded-xl shadow-lg">
+</div>
 
     <div class="flex max-w-6xl mx-auto items-center gap-2">
       <i id="heartIcon" class="ri-heart-line text-2xl text-gray-400 cursor-pointer transition-all duration-300"></i>

@@ -19,6 +19,7 @@
 <body class="overflow-x-hidden">   
 
 
+
   <!-- Random Word Background Container -->
   <div id="bg-word-layer" translate="no" aria-hidden="true" lang="zxx" class="notranslate absolute inset-0 z-0 overflow-hidden pointer-events-none"></div>
   
@@ -65,13 +66,26 @@
     <h1 class="text-4xl font-sans font-extrabold tracking-widest leading-tight">
       Who<br>Is<br>DRE<span class="underline decoration-gray-600">VVIANN</span>
     </h1>
-    <div class="bg-gray-900 border border-gray-300 text-white px-4 py-3 rounded-xl max-w-sm">
+<div class="relative max-w-md mx-auto mt-6 overflow-hidden">
+  <!-- Anime Character -->
+  <img src="assets/img/lupa.png" alt="Lupa"
+       class="absolute left-[-5px] top-[-10px] left-[-20px] w-[100px] sm:w-[120px] md:w-[140px] h-auto z-10 select-none pointer-events-none transition-all duration-300">
+
+  <!-- Main Container -->
+  <div class="flex items-center bg-gray-900 border border-gray-300 text-white px-4 py-3 rounded-xl shadow-lg relative z-0">
+    <div class="pl-20 sm:pl-24 md:pl-28">
       <div class="text-sm uppercase tracking-widest">Support DREVVIANN. 🤩</div>
-      <div class="flex justify-between items-center mt-1">
-        <span class="text-xs">Traktir aku (@drevviann) dengan <br> saweria 😋</span>
-        <a href="https://saweria.com/drevviann"><button class="text-xs border px-3 py-1 rounded-full border-white hover:bg-white hover:text-black transition">Saweria →</button></a>
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mt-1 space-y-2 sm:space-y-0">
+        <span class="text-xs">Traktir aku (@drevviann) dengan <br class="sm:hidden"> saweria 😋</span>
+        <a href="https://saweria.com/drevviann">
+          <button class="text-xs border px-3 py-1 rounded-full border-white hover:bg-white hover:text-black transition">
+            Saweria →
+          </button>
+        </a>
       </div>
     </div>
+  </div>
+</div>
     <p class="text-sm font-medium max-w-md bg-[#fef0e6] text-gray-800 shadow-xl p-4 rounded-xl border-l-4 border-black">
       "Hai, namaku DREVVIANN, aku adalah seorang konten kreator Anime Manipulation sekaligus konten kreator wuthering waves."
     </p> <br>
@@ -85,10 +99,14 @@
       <i id="heartIcon" class="ri-heart-line text-2xl text-gray-400 cursor-pointer transition-all duration-300"></i>
       <span id="likeCount" class="text-white text-sm">0</span>
     </div>
+    
+    <div class="relative mt-6 rounded-xl overflow-hidden max-w-6xl mx-auto">
+  <img src="assets/img/profile-bg.jpg" alt="Profile Background" class="w-full object-cover rounded-xl shadow-lg">
+</div>
  </section>
 
 <!-- Video Thumbnails -->
-<div class="max-w-6xl mx-auto py-12 px-6">
+<div class="max-w-6xl mx-auto py-2 px-6">
   <h3 class="text-xl md:text-2xl font-semibold mb-6"><i class="ri-video-on-fill text-blue-400"></i> Pinned Videos</h3>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
 
